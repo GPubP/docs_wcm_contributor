@@ -11,7 +11,6 @@
 * Developer guides
     * [Overzicht](/README.md)
     * [Hello world module](/README.md)
-        * [Hello world pagina](/README.md)
     * [Todo module](/README.md)
         * [Creating a Todo component](/README.md)
         * [Building a Todo API](/README.md)
