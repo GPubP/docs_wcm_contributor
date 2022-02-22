@@ -1,1 +1,0 @@
-!> Hier komen design patterns, dit zijn handige uitgewerkte voorbeelden op basis van opgedane praktijk ervaringen

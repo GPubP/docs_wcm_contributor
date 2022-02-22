@@ -2,15 +2,14 @@
 
 <img src="http://cdn.antwerpen.be/digipolis_branding_scss/5.0.0/assets/images/digipolis-logo.svg" alt="" width="144" height="72">
 
-# Digipolis API System <small>v7.0.0</small>
+# WCM / Redactie contributie documentatie <small>v1.0.0</small>
 
-> A guide to design & build developer friendly API's
+> A guide to contribute to the WCM / Redactie
 
-- Een handige gids voor het ontwerpen en bouwen van API's voor Digipolis
+- Een handige gids voor voor het uitbreiden van de WCM via modules
 - Vol met voorbeelden, basis spelregels en praktische tips 
-- Valideren via de Open API Validator
 
-<!-- [GitHub](https://github.com/digipolisantwerpdocumentation/api-system) -->
+<!-- [GitHub](https://github.com/digipolisantwerpdocumentation/wcm-contrib-documentatie) -->
 [Get Started](#main)
 
 ![color](#0057b7)

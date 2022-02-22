@@ -1,48 +1,45 @@
 <!-- docs/_sidebar.md -->
 
-* Start
-    * [Getting started](/README.md)
-    * [Contributing](/content/contributing.md)
+* Getting Started
+    * [Introductie](/README.md)
+    * [Architectuur](/README.md)
+    * [Core principles](/README.md)
+    * [Setup](/README.md)
+        * [Frontend](/README.md)
+        * [Backend](/README.md)
 
-* API basics
-    * [API](/content/common/api.md)
-    * [REST introductie](/content/common/rest.md)
+* Developer guides
+    * [Overzicht](/README.md)
+    * [Hello world module](/README.md)
+        * [Hello world pagina](/README.md)
+    * [Todo module](/README.md)
+        * [Creating a Todo component](/README.md)
+        * [Building a Todo API](/README.md)
+        * [Connecting to the Todo API](/README.md)
 
-* Voor developers
-    * [Intro](/content/developers/intro.md)
-    * [Resource representatie](/content/developers/resource-representation.md)
-    * [Resources](/content/developers/resources.md)
-    * [Requests](/content/developers/request.md)
-    * [Status codes & responses](/content/developers/statuscodes-response.md)
-    * [Filteren en sorteren](/content/developers/filter-sort.md)
-    * [Paginatie](/content/developers/paging.md)
-    * [Event resources](/content/developers/event-resources.md)
-    * [Error handling](/content/developers/error-handling.md)
-    * [Versionering](/content/developers/versioning.md)
-    * [Langdurende operaties](/content/developers/long-running.md)
-    * [Cheat sheet (TL;DR)](/content/developers/cheat-sheet.md)
-    * [Changelog](/content/developers/changelog.md)
+* Best practices
+    * TBD
+    * [API guidelines](https://antwerp-api.digipolis.be)
 
-* Voor designers
+* API reference
+    * [Overzicht](/README.md)
+    * [Core](/README.md)
+        * [Core package (FE)](/README.md)
+        * [Utils (FE)](/README.md)
+        * [Antwerp UI (FE)](/README.md)
+        * [Editiorial UI (FE)](/README.md)
+        * [Webpack package (FE)](/README.md)
+        * [Config package (BE)](/README.md)
+        * [Kafka package (BE)](/README.md)
+    * [Roles & rights module](/README.md)
+        * [roles-rights module](/README.md)
+        * [BraaS package](/README.md)
+    * [Form renderer module](/README.md)
+    * [Content module](/README.md)
+    * [Content-types module](/README.md)
 
-    * [Intro](/content/designers/intro.md)
-    * [Basis begrippen](/content/designers/basic-concepts.md)
-    * [Analyse voorbereiding](/content/designers/analysis.md)
-    * [OAS en YAML](/content/designers/oas-yaml.md)
-    * [API design](/content/designers/design.md)
-    * [Design principes](/content/designers/principles.md)
-    * [Patterns](/content/designers/patterns.md)
-    * [Todo](/content/designers/todo.md)
-
-* Tools & downloads
-
-    * [Validator](/content/tools/validate.md)
-    * [Generators](/content/tools/generators.md)
-    * [Voorbeelden](/content/tools/examples.md)
-
-* Tips
-
-    * [Postman tips](/content/common/postman-tips.md)
-    * [Goede documentatie schrijven](/content/common/swagger-docs.md)
+* Contribution
+    * [Overview](/README.md)
+    * TBD
     <!-- * [Glossary](/_glossary.md) -->
 
