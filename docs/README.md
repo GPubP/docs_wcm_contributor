@@ -1,4 +1,4 @@
-# Digipolis API System documentatie
+# WCM / Redactie contributie documentatie
 
 Deze documentatie is gemaakt op basis van https://docsify.js.org/#/
 
