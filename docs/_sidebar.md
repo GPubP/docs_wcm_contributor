@@ -2,11 +2,11 @@
 
 * Getting Started
     * [Introductie](/README.md)
-    * [Architectuur](/README.md)
+    * [Architectuur](/content/architecture.md)
     * [Core principles](/README.md)
     * [Setup](/README.md)
-        * [Frontend](/README.md)
-        * [Backend](/README.md)
+        * [Redactie (FE)](/README.md)
+        * [WCM (BE)](/README.md)
 
 * Developer guides
     * [Overzicht](/README.md)

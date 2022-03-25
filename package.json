@@ -1,0 +1,29 @@
+{
+  "name": "docs_contributor",
+  "version": "1.0.0",
+  "description": "Conritubion documentation for GPubP Web Content Managment",
+  "main": "docs/index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "npx docsify serve ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GPubP/docs_contributor.git"
+  },
+  "keywords": [
+    "documentation",
+    "GPuBP"
+  ],
+  "author": "Jeroen Valcke <jeroen.valcke@digipolis.be>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GPubP/docs_contributor/issues"
+  },
+  "homepage": "https://github.com/GPubP/docs_contributor#readme",
+  "dependencies": {
+    "docsify": "^4.12.2"
+  }
+}
