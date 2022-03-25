@@ -2,5 +2,5 @@
 
 [TODO]
 
-Ga naar het [WCM Contribution documentatie]([TODO])
+Ga naar het [WCM Contribution documentatie](https://gpubp.github.io/docs_contributor/#/)
 
