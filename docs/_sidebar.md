@@ -16,9 +16,14 @@
         * [Building a Todo API](/README.md)
         * [Connecting to the Todo API](/README.md)
 
+* Designer guides
+    * [Overzicht](/README.md)
+    * [Design richtlijnen](/README.md)
+
 * Best practices
     * TBD
     * [API guidelines](https://antwerp-api.digipolis.be)
+    * [Antwerp UI ](http://antwerp-api.digipolis.be/)
 
 * API reference
     * [Overzicht](/README.md)
