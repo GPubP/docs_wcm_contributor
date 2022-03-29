@@ -69,10 +69,57 @@ De WCM context bestaat uit:
 
 ## Redactie
 
+De Redactie is een modulaire interface op de WCM API.\
+Deze applicatie biedt de nodige tools om:
+- te authenticeren
+- multitenancy te ondersteunen
+- Modules in te laden
+- Routing & navigatie af te handelen
+- Communicatie tussen modules mogelijk te maken.
+
+Om dit te realiseren is deze applicatie opgedeeld in de volgende onderdelen:
+- BFF
+- twee React apps (tenant overview & tenant)
+- Module installer service
+- modules
+
+Schematisch staan deze onderdelen als volgt t.o.v. elkaar:
+
+<img src="../assets/redactie-architecture.png" alt="Business service architectuur" width="700px"/>
+
 ### Redactie app
+De redactie applicatie bestaat uit 3 onderdelen: de BFF, tenant overview React app en tenant React app.
+
+De BFF biedt de 2 frontend applicaties aan en voorziet een proxy interface naar de WCM.
+Daarnaast staat deze service ook in van het aanbieden en afschremen van de modules op basis van user & tenant gegevens.
+
+De 2 frontends worden aangeboden op basis van routing waarbij:
+- redactie.antwerpen.be naar de tenants overview applicatie verwijst
+- redactie.antwerpen.be/client/:id/... naar de tenant applicatie verwijst
+
+De Tenants overview applicatie is vrij simpele react app dat tenants, specifiek voor een user, beschikbaar stelt en de mogelijkheid biedt om naar een specifieke tenant te navigeren.
+
+De tenant applicatie is de core van de interface en staat in voor het inladen en beschikbaar stellen van de modules.\
+Deze applicatie biedt aan de modules de nodige tools om hun pagina's en functionaliteit beschikbaar te stellen aan de ingelogde user.
 
 ### Modules
 
+Redactie modules zijn npm packages die op een specifieke manier worden ingeladen zodat deze gemakkelijk kunnen integreren met de core en elkaar.\
+Deze npm packages worden gepackaged door webpack met een specifieke Redactie Webpack plugin zodat deze bij het inladen context kunnen verkrijgen van de Core.
+
+<img src="../assets/modules-technical-architecture.png" alt="Business service architectuur" width="700px"/>
+
+De core biedt via de Core packge (zie hierboven) 4 functionaliteiten aan:
+- Registreren van routes
+- Registreren van menu items aan de hoofdnavigatie
+- Beschikbaar stellen van logica aan andere modules
+- Logica opvragen van andere modules
+
+<img src="../assets/modules-architecture.png" alt="Business service architectuur" width="700px"/>
+
 ### Module installer
 
-## Modulaire strategie
+De module installer is een service dat alle beschikbare Redactie modules ophaalt van de WCM Admin API en en voor een installeert op een AWS bucket.
+Deze AWS bucket wordt dan door de Redactie app aangepsproken om de modules aan te bieden aan de tenant applicatie.
+
+Deze service loopt d.m.v. een cronjob en gaat iedere minuut nagaan of er nieuwe installaties moeten starten. De installaties gebeuren via een queue waardoor het mogelijk is dat de installatie van een nieuwe module langer duurt dan een paar minuten.
