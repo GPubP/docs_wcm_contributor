@@ -1,12 +1,12 @@
 <!-- docs/_sidebar.md -->
 
 * Getting Started
-    * [Introductie](/README.md)
-    * [Architectuur](/content/architecture.md)
-    * [Core principles](/README.md)
-    * [Setup](/README.md)
-        * [Redactie (FE)](/README.md)
-        * [WCM (BE)](/README.md)
+    * [Introductie](/README.md "GPubP Content beheer - Getting started")
+    * [Architectuur](/content/architecture.md "GPubP Content beheer - Architectuur")
+    * [Core principles](/README.md "GPubP Content beheer - Core principles")
+    * [Setup](/README.md "GPubP Content beheer - Setup")
+        * [Redactie (FE)](/README.md "GPubP Content beheer - Redactie setup")
+        * [WCM (BE)](/README.md "GPubP Content beheer - WCM setup")
 
 * Developer guides
     * [Overzicht](/README.md)

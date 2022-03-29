@@ -1,6 +1,6 @@
 # Architectuur
 
-De GPuBP Content management bestaat uit 2 systemen.\
+De GPubP Content beheer bestaat uit 2 systemen.\
 Een backend (WCM) die een aantal API's voorziet en een interface (Redactie) op deze API's.
 
 > De termen "WCM" en "Redactie" worden doorgaans door elkaar gebruikt maar binnen deze documentatie hebben ze steeds een verschillende betekenis:
@@ -69,12 +69,10 @@ De WCM context bestaat uit:
 
 ## Redactie
 
-Coming soon!
-
-<!-- ### Redactie app
+### Redactie app
 
 ### Modules
 
 ### Module installer
 
-## Modulaire strategie -->
+## Modulaire strategie
