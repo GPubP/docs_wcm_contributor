@@ -21,9 +21,10 @@
     * [Design richtlijnen](/README.md)
 
 * Best practices
-    * TBD
-    * [API guidelines](https://antwerp-api.digipolis.be)
-    * [Antwerp UI ](http://antwerp-api.digipolis.be/)
+    * [API guidelines](https://antwerp-api.digipolis.be ':target="_blank"')
+    * [Antwerp UI](https://antwerp-ui.digipolis.be/home ':target="_blank"')
+    * [Editorial UI](https://github.com/digipolisantwerp/editorial-ui_react ':target="_blank"')
+    * [Digipolis API store](https://api-store.antwerpen.be ':target="_blank"')
 
 * API reference
     * [Overzicht](/README.md)
