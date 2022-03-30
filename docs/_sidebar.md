@@ -5,8 +5,10 @@
     * [Architectuur](/content/architecture.md "GPubP Content beheer - Architectuur")
     * [Core principles](/README.md "GPubP Content beheer - Core principles")
     * [Setup](/README.md "GPubP Content beheer - Setup")
-        * [Redactie (FE)](/README.md "GPubP Content beheer - Redactie setup")
-        * [WCM (BE)](/README.md "GPubP Content beheer - WCM setup")
+        * [Redactie](/content/redactie.md "GPubP Content beheer - Redactie setup")
+            * [Installeren en opstarten](/content/redactie-setup.md "GPubP Content beheer - Redactie installeren en opstarten")
+            * [Lokaal ontwikkelen](/content/redactie-dev-setup.md "GPubP Content beheer - Redactie installeren en opstarten")
+        * [WCM](/README.md "GPubP Content beheer - WCM setup")
 
 * Developer guides
     * [Overzicht](/README.md)

@@ -37,7 +37,6 @@
       autoHeader: false,
       loadNavbar: true,
       onlyCover: false,
-      noEmoji: true,
       plantuml: {
         skin: 'default',
       },
@@ -57,6 +56,17 @@
           '/.*/_navbar.md' : '/_navbar.md',
           '/.*/_sidebar.md' : '/_sidebar.md',
       },
+      copyCode: {
+      buttonText: {
+        '/': 'Kopiëren'
+      },
+      errorText: {
+        '/': 'Er is iets fout gelopen bij het kopiëren'
+      },
+      successText: {
+        '/': 'Gekopiëeerd!'
+      }
+    }
     //   plugins: [
     //     function (hook, vm) {
     //       hook.ready(function () {
@@ -90,7 +100,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
   <script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
   <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
-
+  <script src="//unpkg.com/docsify-copy-code"></script>
 </body>
 
 </html>
