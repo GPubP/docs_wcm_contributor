@@ -1,6 +1,6 @@
 # WCM / Redactie contributie documentatie
 
-Ga naar de [WCM Contribution documentatie](https://gpubp.github.io/docs_contributor/#/)
+Ga naar de [WCM Contribution documentatie](https://gpubp.github.io/docs_wcm_contributor/#/)
 
 ## Setup
 First install the dependencies with: <br>
