@@ -35,7 +35,7 @@ De WCM maakt gebruik van zowel "interne" engines als "externe" engines waarbij i
 ### Business services
 
 Business services werken volledig binnen de WCM context en hebben meestal (maar niet altijd) een connectie met 1 of meerdere engines.\
-Elke service werkt in functie van een specifiek entiteit of functionaliteit.\
+Elke service werkt in functie van een specifieke entiteit of functionaliteit.\
 
 Deze services staan o.a. in voor de volgende taken:
 - Engine data beschikbaar stellen
