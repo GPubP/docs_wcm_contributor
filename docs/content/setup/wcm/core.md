@@ -3,7 +3,7 @@
 ## Benodigdheden
 
 Om onderstaande installatie te kunnen uitvoeren moet je de volgende zaken ter beschikking hebben.\
-De zaken die aangegeven staan als niet verplicht zijn, zaken die je doorgaans enkel nodig hebt als je aan de core zelf wil ontwikkelen.
+De zaken die aangegeven staan als niet verplicht zijn zaken die je doorgaans enkel nodig hebt als je aan de core zelf wil ontwikkelen.
 
 | Naam                    | Verplicht          |
 |-------------------------|--------------------|
