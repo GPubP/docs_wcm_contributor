@@ -1,7 +1,7 @@
 # Redactie setup
 
 De Redactie is een modulaire interface op de WCM API.\
-Voor lokale ontwikkeling (op Dev WCM API) is het voldoende op enkel de redactie app te draaien.
+Voor lokale ontwikkeling (op Dev WCM API) is het voldoende om enkel de redactie app te draaien.
 
 ## Redactie lokaal opzetten
 Indien je de Redactie app lokaal wil draaien kan je de volgende stappen uitvoeren:
