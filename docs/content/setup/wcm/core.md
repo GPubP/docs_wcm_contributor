@@ -20,7 +20,6 @@ git clone -b master-v4 --recurse-submodules ssh://git@git.antwerpen.be/wcm/wcm-m
 git clone ssh://git@git.antwerpen.be/wcm/wcm-gateway_service_nodejs.git
 ```
 
-<!-- TODO: remove the need to checkout to another branch -->
 2. Start de WCM Admin service
 ```bash
 cd ./wcm-multitenancy
