@@ -2,13 +2,15 @@
 
 * Getting Started
     * [Introductie](/README.md "GPubP Content beheer - Getting started")
-    * [Architectuur](/content/architecture.md "GPubP Content beheer - Architectuur")
+    * [Architectuur](/content/architecture/index.md "GPubP Content beheer - Architectuur")
     * [Core principes](/content/core-principles.md "GPubP Content beheer - Core principes")
-    * [Setup](/content/setup.md "GPubP Content beheer - Setup")
-        * [Redactie](/content/redactie.md "GPubP Content beheer - Redactie setup")
-            * [Installeren en opstarten](/content/redactie-setup.md "GPubP Content beheer - Redactie installeren en opstarten")
-            * [Lokaal ontwikkelen](/content/redactie-dev-setup.md "GPubP Content beheer - Redactie lokaal opzetten")
-        * [WCM](/README.md "GPubP Content beheer - WCM setup")
+    * [Setup](/content/setup/index.md "GPubP Content beheer - Setup")
+        * [Redactie](/content/setup/redactie/index.md "GPubP Content beheer - Redactie setup")
+            * [Installeren en opstarten](/content/setup/redactie/setup.md "GPubP Content beheer - Redactie installeren en opstarten")
+            * [Lokaal ontwikkelen](/content/setup/redactie/dev-setup.md "GPubP Content beheer - Redactie lokaal opzetten")
+        * [WCM](/content/setup/wcm/index.md "GPubP Content beheer - WCM setup")
+            * [Core](/content/setup/wcm/core.md "GPubP Content beheer - WCM Core setup")
+            * [Modules](/content/setup/wcm/modules.md "GPubP Content beheer - WCM modules setup")
 
 * Developer guides
     * [Overzicht](/content/developer-guides.md "GPubP Content beheer - Developer guides")

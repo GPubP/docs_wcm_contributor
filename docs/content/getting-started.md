@@ -7,9 +7,9 @@ Deze documentatie geeft je de nodige informatie en tools om zelf functionaliteit
 Wil je snel starten met de GPubP Content beheer?\
 Neem dan een kijkje bij de onderstaande links:
 
-[GPubP lokaal opzetten](/content/setup.md)
+[GPubP lokaal opzetten](/content/setup/index.md)
 
-[Bekijk onze architectuur](/content/architecture.md)
+[Bekijk onze architectuur](/content/architecture/index.md)
 
 [De core principles](/content/core-principles.md)
 

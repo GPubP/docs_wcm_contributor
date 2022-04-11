@@ -14,7 +14,7 @@ De zaken die aangegeven staan als niet verplicht zijn, zaken die je doorgaans en
 
 ## Installatie
 
-1. Clone the redactie app repository
+1. Clone de redactie app repository
 ```bash
 git clone ssh://git@git.antwerpen.be/reda/redactie_app_nodejs.git
 ```
