@@ -13,8 +13,8 @@
             * [Modules](/content/setup/wcm/modules.md "GPubP Content beheer - WCM modules setup")
 
 * Developer guides
-    * [Overzicht](/content/developer-guides.md "GPubP Content beheer - Developer guides")
-    * [Hello world module](/README.md)
+    * [Overzicht](/content/developer-guides/index.md "GPubP Content beheer - Developer guides")
+    * [Hello world example](/content/developer-guides/hello-world.md "GPubP Content beheer - Hello world example")
     * [Todo module](/README.md)
         * [Creating a Todo component](/README.md)
         * [Building a Todo API](/README.md)
