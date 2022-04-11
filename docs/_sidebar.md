@@ -3,15 +3,15 @@
 * Getting Started
     * [Introductie](/README.md "GPubP Content beheer - Getting started")
     * [Architectuur](/content/architecture.md "GPubP Content beheer - Architectuur")
-    * [Core principles](/README.md "GPubP Content beheer - Core principles")
-    * [Setup](/README.md "GPubP Content beheer - Setup")
+    * [Core principes](/content/core-principles.md "GPubP Content beheer - Core principes")
+    * [Setup](/content/setup.md "GPubP Content beheer - Setup")
         * [Redactie](/content/redactie.md "GPubP Content beheer - Redactie setup")
             * [Installeren en opstarten](/content/redactie-setup.md "GPubP Content beheer - Redactie installeren en opstarten")
-            * [Lokaal ontwikkelen](/content/redactie-dev-setup.md "GPubP Content beheer - Redactie installeren en opstarten")
+            * [Lokaal ontwikkelen](/content/redactie-dev-setup.md "GPubP Content beheer - Redactie lokaal opzetten")
         * [WCM](/README.md "GPubP Content beheer - WCM setup")
 
 * Developer guides
-    * [Overzicht](/README.md)
+    * [Overzicht](/content/developer-guides.md "GPubP Content beheer - Developer guides")
     * [Hello world module](/README.md)
     * [Todo module](/README.md)
         * [Creating a Todo component](/README.md)
@@ -28,8 +28,8 @@
     * [Editorial UI](https://github.com/digipolisantwerp/editorial-ui_react ':target="_blank"')
     * [Digipolis API store](https://api-store.antwerpen.be ':target="_blank"')
 
-* API reference
-    * [Overzicht](/README.md)
+* API referentie
+    * [Overzicht](/content/api-references.md "GPubP Content beheer - API referentie")
     * [Core](/README.md)
         * [Core package (FE)](/README.md)
         * [Utils (FE)](/README.md)
@@ -45,8 +45,8 @@
     * [Content module](/README.md)
     * [Content-types module](/README.md)
 
-* Contribution
+* Contributie
     * [Overview](/README.md)
     * TBD
-    <!-- * [Glossary](/_glossary.md) -->
+* [Changelog](/CHANGELOG.md "GPubP Content beheer - Changelog")
 
