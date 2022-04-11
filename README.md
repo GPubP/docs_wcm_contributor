@@ -1,6 +1,6 @@
-# WCM / Redactie contributie documentatie
+# GPubP Content beheer documentatie
 
-Ga naar de [WCM Contribution documentatie](https://gpubp.github.io/docs_contributor/#/)
+Ga naar de [GPubP Content beheer documentatie](https://gpubp.github.io/docs_contributor/#/)
 
 ## Setup
 First install the dependencies with: <br>
