@@ -229,7 +229,7 @@ body.close .sidebar-toggle {
 .app-nav a:hover,
 .app-nav a:active,
 .app-nav a:visited {
-    color: white;
+    color: var(--theme-color);
     text-decoration: underline;
 }
 
