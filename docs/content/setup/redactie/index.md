@@ -16,9 +16,9 @@ docker-compose build
 docker-compose up
 ```
 
-Meer informatie over deze stappen vind je hier: [Installeren en opstarten](/content/redactie-setup.md)
+Meer informatie over deze stappen vind je hier: [Installeren en opstarten](/content/setup/redactie/setup.md)
 
 ## Ontwikkelen op de Redactie
 Indien je aanpassingen wil doen op de Redactie core of een van zijn modules kan de volgende stappen ondernemen:
 
-[Lokaal ontwikkelen](/content/redactie-dev-setup.md)
+[Lokaal ontwikkelen](/content/setup/redactie/dev-setup.md)
