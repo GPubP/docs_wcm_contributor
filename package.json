@@ -1,7 +1,7 @@
 {
-  "name": "docs_contributor",
+  "name": "docs_wcm_contributor",
   "version": "1.0.0",
-  "description": "Conritubion documentation for GPubP Web Content Managment",
+  "description": "Contribution documentation for GPubP Web Content Management",
   "main": "docs/index.html",
   "directories": {
     "doc": "docs"

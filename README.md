@@ -1,6 +1,6 @@
 # GPubP Content beheer documentatie
 
-Ga naar de [GPubP Content beheer documentatie](https://gpubp.github.io/docs_contributor/#/)
+Ga naar de [GPubP Content beheer documentatie](https://gpubp.github.io/docs_wcm_contributor/#/)
 
 ## Setup
 First install the dependencies with: <br>
