@@ -20,7 +20,7 @@ Elke laag heeft echter wel een specifiek doel waarbij de services die onder zo'n
 
 Deze lagen staan als volgt t.o.v. elkaar:
 
-![High level architectuur](../assets/high-level-architecture.png)
+<img src="/assets/high-level-architecture.png" alt="High level architectuur" width="800px"/>
 
 ### Engines
 
@@ -42,7 +42,7 @@ Deze services staan o.a. in voor de volgende taken:
 - Integratie met andere business services
 - Beveiliging van data binnen WCM Rollen & rechten context
 
-<img src="../assets/business-service-architecture.png" alt="Business service architectuur" width="700px"/>
+<img src="/assets/business-service-architecture.png" alt="Business service architectuur" width="600px"/>
 
 ### Gateway
 
@@ -81,7 +81,7 @@ Om dit te realiseren is deze applicatie opgedeeld in de volgende onderdelen:
 
 Schematisch staan deze onderdelen als volgt t.o.v. elkaar:
 
-<img src="../assets/redactie-architecture.png" alt="Business service architectuur" width="700px"/>
+<img src="/assets/redactie-architecture.png" alt="Business service architectuur" width="700px"/>
 
 ### Redactie app
 De redactie applicatie bestaat uit 3 onderdelen: de BFF, tenant overview React app en tenant React app.
@@ -103,7 +103,7 @@ Deze applicatie biedt aan de modules de nodige tools om hun pagina's en function
 Redactie modules zijn npm packages die op een specifieke manier worden ingeladen zodat deze gemakkelijk kunnen integreren met de core en elkaar.\
 Deze npm packages worden gepackaged door webpack met een specifieke Redactie Webpack plugin zodat deze bij het inladen context kunnen verkrijgen van de Core.
 
-<img src="../assets/modules-technical-architecture.png" alt="Business service architectuur" width="700px"/>
+<img src="/assets/modules-technical-architecture.png" alt="Business service architectuur" width="600px"/>
 
 De core biedt via de Core package (zie hierboven) 4 functionaliteiten aan:
 - Registreren van routes
@@ -111,7 +111,7 @@ De core biedt via de Core package (zie hierboven) 4 functionaliteiten aan:
 - Beschikbaar stellen van logica aan andere modules
 - Logica opvragen van andere modules
 
-<img src="../assets/modules-architecture.png" alt="Business service architectuur" width="700px"/>
+<img src="/assets/modules-architecture.png" alt="Business service architectuur" width="600px"/>
 
 ### Module installer
 
