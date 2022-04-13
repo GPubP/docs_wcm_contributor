@@ -8,6 +8,7 @@
   <meta name="description" content="Een handige gids voor uitbreidingen en modules te maken, vol met voorbeelden, basis spelregels en praktische tips">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/docsify-accordion/src/style.css">
   <link rel="stylesheet" href="css/custom.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/apple-touch-icon.png">
@@ -31,7 +32,9 @@
     window.$docsify = {
       name: 'GPubP Content beheer',
       repo: 'digipolisantwerpdocumentation/wcm-contrib-documentation',
-      maxLevel: 4,
+      maxLevel: 1,
+      subMaxLevel: 1,
+      sidebarDisplayLevel: 1,
       auto2top: true,
       loadSidebar: true,
       autoHeader: false,
@@ -73,26 +76,7 @@
         crossChapter: true,
         crossChapterText: true,
       },
-    //   plugins: [
-    //     function (hook, vm) {
-    //       hook.ready(function () {
-    //         let urlQueryParam = new URL(
-    //           window.location.origin + location.pathname + window.location.search + location.hash.substring(1)
-    //         ).searchParams
-
-    //         if (urlQueryParam.has('id')) {
-    //           let urlId = urlQueryParam.get('id')
-    //           try {
-    //             document.querySelector('a[data-id*=\'' + urlId + '\']')
-    //               .scrollIntoView()
-    //           } catch (e) {
-    //             console.warn('First load scroll failed', e)
-    //           }
-    //         }
-    //       });
-    //     }
-    //   ]
-    }
+    };
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
@@ -107,6 +91,8 @@
   <script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
   <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="//unpkg.com/docsify-accordion/src/index.js"></script>
   <script src="//unpkg.com/docsify-copy-code"></script>
 </body>
 
