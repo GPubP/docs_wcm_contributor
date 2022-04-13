@@ -39,11 +39,11 @@ docker-compose run
 6. Geef je gebruiker rechten in de database (deze stap is enkel nodig voor de eerste gebruiker)\
     - Open een database connectie naar `mongodb://localhost:27009` via een MongoDB GUI (bv. [Robomongo](https://robomongo.org/))
 
-    <img src="/assets/wcm-admin-mongodb-connection.png" alt="MongoDB connectie maken" width="500px"/>
+    ![WCM Admin MongoDB configuratie](../../../assets/wcm-admin-mongodb-connection.png ':size=500')
 
     - Pas je gebruiker aan in de collectie `users` zodat de property `admin` op true staat
 
-    <img src="/assets/wcm-admin-mongodb-set-admin.png" alt="User admin rechten geven in database" width="700px"/>
+    ![Users collection updaten](../../../assets/wcm-admin-mongodb-set-admin.png ':size=700')
 
 8. Ga terug naar http://localhost:3999 (of refresh) en merk op dat je gebruiker nu admin rechten heeft
 

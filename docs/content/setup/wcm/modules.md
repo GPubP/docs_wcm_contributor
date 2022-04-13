@@ -38,20 +38,20 @@ De module moet eerst geregistreerd worden in de WCM Admin interface zodat deze g
 
 1. Navigeer naar http://localhost:3999 en log in indien nodig.
 2. Navigeer naar `Modules`.
-  <img src="/assets/wcm-admin-modules-overview.png" alt="Modules overzicht in WCM Admin interface" width="600px"/>
+  ![Modules overzicht in WCM Admin interface](../../../assets/wcm-admin-modules-overview.png ':size=600')
 
 3. Klik op `New module` onderaan de pagina.
 4. Vul administratieve naam en beschrijving in.
 5. Selecteer bij het module type `Business service` (of `Engine`).
 6. Vul een route prefix aan zoals beschreven in de readme van de module.
-  <img src="/assets/wcm-admin-modules-general-info.png" alt="Module aanmaken in WCM Admin interface" width="600px"/>
+  ![Module aanmaken in WCM Admin interface](../../../assets/wcm-admin-modules-general-info.png ':size=600')
 
 7. Voeg een versie toe door te klikken op `Add version`.
 8. Vul een versie nummer (meestal 1) en een beschrijving in.\
   Voorlopig wordt de versie nummer nog niet gebruikt maar in de toekomst zal dat wel het geval zijn.
 9. Vul het endpoint in van de module zoals deze lokaal gehost wordt (bv. http://localhost:6021).
 10. Voeg dependencies naar andere modules toe indien nodig.
-  <img src="/assets/wcm-admin-modules-version.png" alt="Module aanmaken in WCM Admin interface" width="600px"/>
+  ![Module versie aanmaken in WCM Admin interface](../../../assets/wcm-admin-modules-version.png ':size=500')
 
 11. Klik op `confirm`.
 12. Klik op `Save modules`.
@@ -63,7 +63,7 @@ Deze communicatie is nodig om informatie over de tenants en andere modules te ve
 
 1. Navigeer naar http://localhost:3999 en log in indien nodig.
 2. Navigeer naar `Server credentials`.
-  <img src="/assets/wcm-admin-credentials-overview.png" alt="Server credentials overzicht in WCM Admin interface" width="600px"/>
+  ![Server credentials overzicht in WCM Admin interface](../../../assets/wcm-admin-credentials-overview.png ':size=600')
 
 3. klik op `New server credential` onderaan de pagina.
 4. Vul administratieve naam en beschrijving in.
@@ -72,7 +72,7 @@ Deze communicatie is nodig om informatie over de tenants en andere modules te ve
 7. Vul een apikey in dat gebruikt wordt in de config van de module.
 8. Selecteer als service type `Module`.
 9. Selecteer de net aangemaakte module.
-  <img src="/assets/wcm-admin-credentials-create.png" alt="Server credentials aanmaken in WCM Admin interface" width="600px"/>
+  ![Server credentials aanmaken in WCM Admin interface](../../../assets/wcm-admin-credentials-create.png ':size=600')
 
 10. Klik op `Save credentials`.
 
