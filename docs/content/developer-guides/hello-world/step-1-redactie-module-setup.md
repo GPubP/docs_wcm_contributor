@@ -1,4 +1,4 @@
-# Stap 1: Nieuwe Redactie module opzetten
+# Hoofstuk 1: Nieuwe Redactie module opzetten
 
 Binnen deze gids gaan we een nieuwe frontend module "Greetings" opzetten op basis van de boilerplate module en deze beschikbaar stellen op onze lokale instantie van de Redactie app.
 
@@ -12,14 +12,18 @@ git clone --depth=1 --branch=master ssh://git@git.antwerpen.be/reda/redactie-boi
 
 # verwijder alle referenties naar de boilerplate git
 rm -rf ./redactie-boilerplate_module/.git
+
+# Hernoem de folder naar Greetings [eigen-naam] (zie verder) module 
+mv ./redactie-boilerplate_module ./redactie-greetings-shd_module_react
+cd ./redactie-greetings-shd_module_react
 ```
 
 Eens je de boilerplate lokaal binnen getrokken hebt, kan je deze configureren, installeren en publiceren.
 
-Als eerste stap herconfigureren moet de package.json opnieuw geconfigureerd worden zodat hier geen verwijzingen meer staan naar de "boilerplate".\
+Als eerste stap herconfigureren moet de package.json opnieuw geconfigureerd worden zodat hier geen verwijzingen meer staan naar de "boilerplate".
 ```json
 {
-  "name": "@redactie/greetings-module",
+  "name": "@redactie/greetings-[naam/bedrijfsnaam]-module",
   "version": "0.0.0-1",
   "description": "Redactie greetings module",
   "main": "dist/redactie-greetings-module.umd.js",
@@ -38,6 +42,8 @@ Als eerste stap herconfigureren moet de package.json opnieuw geconfigureerd word
   ],
 ```
 
+Om niet met meerderen dezelfde module aan te maken kan je best de `[naam/bedrijfsnaam]` aanpassen naar je eigen naam of bedrijf (bv. `@redactie/greetings-shd-module`)
+
 ## Greetings module installeren & publishen
 
 Daarna moet de module een eerste maal geïnstalleerd, gebuild en gepubliceerd worden.
@@ -47,7 +53,7 @@ npm i
 
 npm run build
 
-npm version [prepatch|patch|preminor|minor|premajor|major]
+npm version patch
 
 # De `publishConfig` in de package.json file zal ervoor zorgen dat de module gepublished wordt op de Digipolis Nexus
 npm publish
@@ -88,7 +94,7 @@ services:
 server:
  volumes: 
    # ...
-   - ../redactie-greetings_module_react:/app/server/niv_modules/redactie-greetings-module-0-0-0-1:ro
+   - ../redactie-greetings-shd_module_react:/app/server/niv_modules/redactie-greetings-shd-module-0-0-1:ro
 ```
 
 Om deze nieuwe configuratie door te voeren, moeten de redactie app herstart worden:
@@ -104,7 +110,12 @@ Meer info over modules lokaal mounten vind je [hier](/content/setup/redactie/dev
 We hebben nu alle nodige stappen ondernomen om de module lokaal werkende te krijgen.\
 We kunnen dit nu gaan valideren door een aanpassing te doen in onze lokale versie van de module en dan na te gaan of deze aanpassing doorkomt.
 
-Voeg de volgende log toe aan de `public/index.tsx` file van de greetings module:
+Als eerste stap moeten we de watcher opstarten zodat de module opnieuw gebuild wordt bij elke wijziging die we doen:
+```bash
+npm run build:w
+```
+
+Voeg daarna de volgende log toe aan de `public/index.tsx` file van de greetings module:
 ```ts
 import './lib/api';
 import './lib/routes';

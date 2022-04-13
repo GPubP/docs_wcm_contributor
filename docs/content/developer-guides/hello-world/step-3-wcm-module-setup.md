@@ -1,4 +1,4 @@
-## Stap 3: Nieuwe WCM module opzetten
+## Hoofstuk 3: Nieuwe WCM module opzetten
 
 1. Clone & package.json
 2. Install & Build

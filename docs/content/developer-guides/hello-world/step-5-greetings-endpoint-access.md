@@ -1,4 +1,4 @@
-## Stap 5: Greetings endpoint aanspreken
+## Hoofstuk 5: Greetings endpoint aanspreken
 
 1. API bouwen
 2. Store voorzien
