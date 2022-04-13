@@ -4,6 +4,24 @@ Hieronder beschrijven we de gangbare methode om een module lokaal op te zetten b
 Het is mogelijk dat deze werkwijze in sommige modules kan afwijken.\
 In dat geval kan je terecht in de readme van de module zelf.
 
+We raden aan om onderstaande stappen door te voeren voor minstens de volgende services.\
+Op basis van de startup dependency kolom kan je achterhalen in welke volgorde de services best opgestart worden.
+
+| Naam         | Beschrijving                                   | Type   | Startup dependency        |
+|--------------|------------------------------------------------|--------|---------------------------|
+| WCM          | Content, Content-types & views management      | Engine | WCM Admin                 |
+| Content BSL  | Content, Content-types & views management      | BSL    | WCM Admin, BraaS BSL, WCM |
+| BraaS BSL    | Roles & rights                                 | BSL    | WCM Admin                 |
+| Sites        | Sites management                               | Engine | WCM Admin                 |
+| Sites BSL    | Sites management                               | BSL    | WCM Admin, BraaS BSL      |
+| Assets       | Asset management including translation files   | Engine | WCM Admin                 |
+| Assets BSL   | Asset management                               | BSL    | WCM Admin, BraaS BSL      |
+| Trans BSL    | Translations service (uses assets)             | BSL    | WCM Admin, BraaS BSL      |
+| Worklfow     | Allows content to follow a predefined workflow | Engine | WCM Admin                 |
+| Worklfow BSL | Allows content to follow a predefined workflow | BSL    | WCM Admin, BraaS BSL      |
+
+**Opgelet!** De modules hebben meer dependencies met elkaar dan hier weergegeven. Dit gaat enkel over de start volgorde.
+
 ## Stap 1: module installeren
 
 1. Clone de repository
