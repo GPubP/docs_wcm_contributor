@@ -62,11 +62,11 @@ Van zodra de module beschikbaar is in de registry, kunnen we deze [module config
 
 Maak een nieuwe module aan en stel deze als volgt in:
 
-<img src="/assets/hello-world-module-main-setup.png" alt="Hello world module aanmaken" width="700px"/>
+![Hello world module aanmaken](../../../assets/hello-world-module-main-setup.png ':size=700')
 
 Voeg daarna een versie aan deze module toe met de volgende waarden en bewaar de module
 
-<img src="/assets/hello-world-module-version-setup.png" alt="Hello world module versie aanmaken" width="500px"/>
+![Hello world module aanmaken](../../../assets/hello-world-module-version-setup.png ':size=500')
 
 Als laatste moet de nieuw geregistreerde module nog [ingesteld worden op een tenant](/content/setup/redactie/dev-setup?id=module-instellen-op-tenant)
 
