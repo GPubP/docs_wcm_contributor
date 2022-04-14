@@ -198,7 +198,7 @@ body.close .sidebar-toggle {
     padding: 0.125rem 0.375rem;
 }
 
-.markdown-section img {
+.markdown-section img:not(.emoji) {
     border: 3px solid #f3f3f3;
     padding: 5px;
 }
