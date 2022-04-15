@@ -18,10 +18,10 @@ Daarna maken we een eigen nieuwe module aan `Greetings`. Dit doen we door onder 
 In de `views/Greetings/Greetings.tsx` file maken we de React component die we willen renderen als de Greetings pagina opgeroepen wordt.
 ```ts
 // public/lib/views/Greetings/Greetings.tsx
-import React, { ReactElement } from 'react';
+import React, { FC } from 'react';
 
-const Greetings = (): ReactElement => {
-	return <h1>Hartelijk welkom!</h1>;
+const Greetings: FC = () => {
+    return <h1>Hartelijk welkom!</h1>;
 };
 
 export default Greetings;
@@ -47,12 +47,12 @@ We kunnen deze aanpassen zodat deze onze Greetings view registreert bij de route
 // public/lib/routes.tsx
 import { Greetings } from './views/Greetings';
 ...
-	.subscribe(() => {
-		Core.routes.register({
+    .subscribe(() => {
+        Core.routes.register({
             path: '/greetings',
             component: Greetings,
         });
-	});
+    });
 ```
 
 Nu hebben aan de Core applicatie laten weten dat we onze Greetings view willen renderen wanneer ons url pad overeen komt met `[url]/client/[tenantId]/greetings`.
@@ -68,35 +68,35 @@ Dit kunnen we realiseren door onze route registratie uit te breiden met navigati
 ```ts
 // public/lib/routes.tsx
 Core.routes.register({
-	path: '/greetings',
-	component: Greetings,
-	navigation: {
-		label: 'Begroeting',
-	},
+    path: '/greetings',
+    component: Greetings,
+    navigation: {
+        label: 'Begroeting',
+    },
 });
 ```
 
-Van zodra we een `navigatie` property meegeven aan onze route registratie met een `label`, weet de core dat we voor deze route ook een menu item willen voorzien.\
+Van zodra we een `navigation` property meegeven aan onze route registratie met een `label`, weet de core dat we voor deze route ook een menu item willen voorzien.\
 Als we nu onze pagina refreshen ziet deze er zo uit:
 
 ![Greetings pagina in het menu](../../../assets/greetings-module-page-2.png ':size=800')
 
-Een begroeting moet uiteraard eerst komen. Daarvoor moeten we aan de Core laten weten dat we de "Begroeting" menu item als eerste willen laten renderen in het menu.\
+Een begroeting moet uiteraard eerst komen. Daarvoor moeten we aan de Core laten weten dat we het "Begroeting" menu item als eerste willen laten renderen in het menu.\
 Dit doen we door een gewicht aan onze navigatie te koppelen.
 
 ```ts
 // public/lib/routes.tsx
 Core.routes.register({
-	path: '/greetings',
-	component: Greetings,
-	navigation: {
-		label: 'Begroeting',
+    path: '/greetings',
+    component: Greetings,
+    navigation: {
+        label: 'Begroeting',
         weight: -1
-	},
+    },
 });
 ```
 
-Nu wordt onze begroeting menu item getoond waar het hoort. In het begin!
+Nu wordt ons begroeting menu item getoond waar het hoort. In het begin!
 
 ![Greetings pagina in menu als eerste](../../../assets/greetings-module-page-3.png ':size=800')
 
@@ -110,10 +110,10 @@ Het enige wat we nog moeten doen is de vertalingen toevoegen en deze gebruiken i
 
 ```ts
 // public/lib/i18next/translations.const.ts
-const MODULE_TRANSLATIONS = Object.freeze<I18NextTranslations>({
-	'GREETINGS_MENU-LABEL': tKey('GREETINGS_MENU', 'Begroeting (translated)'),
-	GREETINGS_TITLE: tKey('GREETINGS_TITLE', 'Hartelijk welkom! (translated)'),
-});
+const MODULE_TRANSLATIONS = Object.freeze({
+    'GREETINGS_MENU-LABEL': tKey('GREETINGS_MENU', 'Begroeting (translated)'),
+    GREETINGS_TITLE: tKey('GREETINGS_TITLE', 'Hartelijk welkom! (translated)'),
+} as const);
 ```
 
 Nu kunnen we de vertalingen toepassen op de label van ons 'Begroeting' menu item.
@@ -123,31 +123,31 @@ Nu kunnen we de vertalingen toepassen op de label van ons 'Begroeting' menu item
 import { MODULE_TRANSLATIONS } from './i18next/translations.const';
 import { Greetings } from './views/Greetings';
 ...
-	.subscribe(() => {
-		Core.routes.register({
-			path: '/greetings',
-			component: Greetings,
-			navigation: {
-				label: translationsConnector.moduleTranslate(
-					MODULE_TRANSLATIONS['GREETINGS_MENU-LABEL']
-				),
-				order: -1,
-			},
-		});
-	});
+    .subscribe(() => {
+        Core.routes.register({
+            path: '/greetings',
+            component: Greetings,
+            navigation: {
+                label: translationsConnector.moduleTranslate(
+                    MODULE_TRANSLATIONS['GREETINGS_MENU-LABEL']
+                ),
+                order: -1,
+            },
+        });
+    });
 ```
 
 We kunnen nu ook de titel in onze Greetings vanuit onze translations laten komen:
 ```ts
 // public/lib/views/Greetings/Greetings.tsx
-import React, { ReactElement } from 'react';
+import React, { FC } from 'react';
 
 import translationsConnector from '../../connectors/translations';
 import { MODULE_TRANSLATIONS } from '../../i18next/translations.const';
 
-const Greetings = (): ReactElement => {
-	const [t] = translationsConnector.useModuleTranslation();
-	return <h1>{t(MODULE_TRANSLATIONS.GREETINGS_TITLE)}</h1>;
+const Greetings: FC = () => {
+    const [t] = translationsConnector.useModuleTranslation();
+    return <h1>{t(MODULE_TRANSLATIONS.GREETINGS_TITLE)}</h1>;
 };
 
 export default Greetings;
@@ -178,15 +178,15 @@ Al eerste beginnen we met onze Greetings pagina van een `ContextHeader` te voorz
 import { Container, ContextHeader } from '@acpaas-ui/react-editorial-components';
 ...
 
-const Greetings = (): ReactElement => {
-	const [t] = translationsConnector.useModuleTranslation();
+const Greetings: FC = () => {
+    const [t] = translationsConnector.useModuleTranslation();
 
-	return (
-		<>
-			<ContextHeader title={t(MODULE_TRANSLATIONS.GREETINGS_TITLE)} />
-			<Container>TODO</Container>
-		</>
-	);
+    return (
+        <>
+            <ContextHeader title={t(MODULE_TRANSLATIONS.GREETINGS_TITLE)} />
+            <Container>TODO</Container>
+        </>
+    );
 };
 ```
 ![Greetings pagina met context header](../../../assets//greetings-module-page-5.png ':size=800')
@@ -198,7 +198,7 @@ de breadcrumbs kunnen we bereken op basis van de `useBreadcrumbs` hook.
 import { ModuleRouteConfig, useBreadcrumbs } from '@redactie/redactie-core';
 import { useNavigate, useRoutes } from '@redactie/utils';
 ...
-const Greetings = (): ReactElement => {
+const Greetings: FC = () => {
     ...
     const { generatePath } = useNavigate();
     const routes = useRoutes();
@@ -221,21 +221,21 @@ We gebruiken hiervoor een aantal hooks, beschikbaar gesteld door de Core en util
 - useBreadcrumbs => Berekent op basis van alle routes de huidige breadcrumbs en geeft een renderbaar breadcrumb component terug.\
 Via `excludePaths` kunnen we bepaalde route segmenten negeren en via `extraBreadcrumbs` kunnen we zelf route segmenten toevoegen.
 
-Wat ons nu nog rest is de breadcrumbs effectief renderen. Dit kunnen we doen door in de `ContextHeader` een `ContextHeaderTopSection` te plaatsen:
+Wat ons nu nog rest is de breadcrumbs effectief renderen. Dit kunnen we doen door in deze `ContextHeader` een `ContextHeaderTopSection` te plaatsen:
 ```ts
 // public/lib/views/Greetings/Greetings.tsx
 ...
 const Greetings = (): ReactElement => {
     ...
 
-	return (
-		<>
-			<ContextHeader title={t(MODULE_TRANSLATIONS.GREETINGS_TITLE)}>
-				<ContextHeaderTopSection>{breadcrumbs}</ContextHeaderTopSection>
-			</ContextHeader>
-			<Container>TODO</Container>
-		</>
-	);
+    return (
+        <>
+            <ContextHeader title={t(MODULE_TRANSLATIONS.GREETINGS_TITLE)}>
+                <ContextHeaderTopSection>{breadcrumbs}</ContextHeaderTopSection>
+            </ContextHeader>
+            <Container>TODO</Container>
+        </>
+    );
 };
 ```
 
@@ -246,18 +246,18 @@ Als we pagina refreshen krijgen we dan het volgende resultaat:
 Dit lijkt al veel meer op een pagina zoals we deze gewoonlijk kennen in de Redactie.
 We beschikken nu over alle basisconcepten om een eigen pagina te renderen binnen de Redactie.
 
-In het volgende hoofdstuk gaan we kijken hoe we backend module opzetten zodat we later deze binnen onze nieuwe Greetings pagina kunnen aanspreken.
+In het volgende hoofdstuk gaan we kijken hoe we een backend module opzetten zodat we deze later binnen onze nieuwe Greetings pagina kunnen aanspreken.
 
 ## FAQ
 
 + Mijn wijzigingen komen niet door +
 
-  Indien alle stappen correct verlopen zijn en je nog steeds wijzigingen ziet kan je de volgende zaken proberen:
+  Indien alle stappen correct verlopen zijn en je nog steeds geen wijzigingen ziet, kan je de volgende zaken proberen:
   - Zorg ervoor dat je de pagina inlaadt zonder cache (Tip: zet je console open en selecteer daar `Disable cache` in de network tab).
   - Valideer of het lokale pad (deel voor `:`) in de `docker-compose.yml` het juiste relatief pad bevat naar je lokale module folder.
   - Ga na of de module juist geconfigureerd is in de WCM Admin en of deze correct gekoppeld is aan de tenant.
 
-+ De vertalingen zijn niet aangepast naar wat in ingevuld heb in `translations.const.ts` bestand +
++ De vertalingen zijn niet aangepast naar wat je ingevuld hebt in het `translations.const.ts` bestand +
 
   Herstart de build van de module door het volgende commando te runnen en refresh dan de pagina.
   ```bash
