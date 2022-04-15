@@ -15,11 +15,11 @@
 * Developer guides
     * [Overzicht](/content/developer-guides/index.md "GPubP Content beheer - Developer guides")
     * [Greetings module](/content/developer-guides/greetings/index.md "GPubP Content beheer - Hello world example")
-        * [Hoofstuk 1 - Nieuwe Redactie module opzetten](/content/developer-guides/greetings/step-1-redactie-module-setup "GPubP Content beheer - Hello world example")
-        * [Hoofstuk 2 - Greetings pagina](/content/developer-guides/greetings/step-2-greetings-page.md "GPubP Content beheer - Hello world example")
-        * [Hoofstuk 3 - Nieuwe WCM module opzetten](/content/developer-guides/greetings/step-3-wcm-module-setup.md "GPubP Content beheer - Hello world example")
-        * [Hoofstuk 4 - Greetings endpoint voorzien](/content/developer-guides/greetings/step-4-greetings-endpoint.md "GPubP Content beheer - Hello world example")
-        * [Hoofstuk 5 - Greetings endpoint aanspreken](/content/developer-guides/greetings/step-5-greetings-endpoint-access.md "GPubP Content beheer - Hello world example")
+        * [Hoofdstuk 1 - Nieuwe Redactie module opzetten](/content/developer-guides/greetings/step-1-redactie-module-setup "GPubP Content beheer - Hello world example")
+        * [Hoofdstuk 2 - Greetings pagina](/content/developer-guides/greetings/step-2-greetings-page.md "GPubP Content beheer - Hello world example")
+        * [Hoofdstuk 3 - Nieuwe WCM module opzetten](/content/developer-guides/greetings/step-3-wcm-module-setup.md "GPubP Content beheer - Hello world example")
+        * [Hoofdstuk 4 - Greetings endpoint voorzien](/content/developer-guides/greetings/step-4-greetings-endpoint.md "GPubP Content beheer - Hello world example")
+        * [Hoofdstuk 5 - Greetings endpoint aanspreken](/content/developer-guides/greetings/step-5-greetings-endpoint-access.md "GPubP Content beheer - Hello world example")
         * [Extra - Eigen user als afzender weergeven](/content/developer-guides/greetings/extra-own-user-display.md "GPubP Content beheer - Hello world example")
 
 * Designer guides
