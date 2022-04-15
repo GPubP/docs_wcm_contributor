@@ -1,4 +1,4 @@
-## Hoofstuk 4: Greetings endpoint voorzien
+## Hoofdstuk 4: Greetings endpoint voorzien
 
 1. Module aanmaken
 2. Route aanmaken

@@ -1,4 +1,4 @@
-# Hoofstuk 1: Nieuwe Redactie module opzetten
+# Hoofdstuk 1: Nieuwe Redactie module opzetten
 
 Binnen deze gids gaan we een nieuwe frontend module "Greetings" opzetten op basis van de boilerplate module en deze beschikbaar stellen op onze lokale instantie van de Redactie app.
 
@@ -97,7 +97,7 @@ server:
    - ../redactie-greetings-shd_module_react:/app/server/niv_modules/redactie-greetings-shd-module-0-0-1:ro
 ```
 
-Om deze nieuwe configuratie door te voeren, moeten de redactie app herstart worden:
+Om deze nieuwe configuratie door te voeren, moet de redactie app herstart worden:
 
 ```bash
 docker-compose down && docker-compose up
