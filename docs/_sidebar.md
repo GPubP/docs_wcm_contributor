@@ -13,8 +13,14 @@
             * [Modules](/content/setup/wcm/modules.md "GPubP Content beheer - WCM modules setup")
 
 * Developer guides
-    * [Overzicht](/content/developer-guides.md "GPubP Content beheer - Developer guides")
-    * [Hello world module](/README.md)
+    * [Overzicht](/content/developer-guides/index.md "GPubP Content beheer - Developer guides")
+    * [Greetings module](/content/developer-guides/hello-world/index.md "GPubP Content beheer - Hello world example")
+        * [Hoofstuk 1 - Nieuwe Redactie module opzetten](/content/developer-guides/hello-world/step-1-redactie-module-setup "GPubP Content beheer - Hello world example")
+        * [Hoofstuk 2 - Greetings pagina](/content/developer-guides/hello-world/step-2-greetings-page.md "GPubP Content beheer - Hello world example")
+        * [Hoofstuk 3 - Nieuwe WCM module opzetten](/content/developer-guides/hello-world/step-3-wcm-module-setup.md "GPubP Content beheer - Hello world example")
+        * [Hoofstuk 4 - Greetings endpoint voorzien](/content/developer-guides/hello-world/step-4-greetings-endpoint.md "GPubP Content beheer - Hello world example")
+        * [Hoofstuk 5 - Greetings endpoint aanspreken](/content/developer-guides/hello-world/step-5-greetings-endpoint-access.md "GPubP Content beheer - Hello world example")
+        * [Extra - Eigen user als afzender weergeven](/content/developer-guides/hello-world/extra-own-user-display.md "GPubP Content beheer - Hello world example")
     * [Todo module](/README.md)
         * [Creating a Todo component](/README.md)
         * [Building a Todo API](/README.md)
