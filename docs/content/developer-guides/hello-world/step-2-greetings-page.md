@@ -1,4 +1,4 @@
-# Hoofstuk 2: Greetings pagina
+# Hoofdstuk 2: Greetings pagina
 
 Na [stap 1](./step-1-redactie-module-setup.md) kunnen we effectief starten aan het ontwikkelen van onze module.\
 We voorzien binnen dit hoofdstuk een "greetings" pagina dat de gebruiker begroet.\
