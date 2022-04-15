@@ -140,7 +140,7 @@ We zijn nu klaar om onze eerste pagina te bouwen!
 
 + Ik krijg geen log te zien +
 
-  Indien alle stappen correct verlopen zijn en je nog steeds geen log ziet kan je de volgende zaken proberen:
+  Indien alle stappen correct verlopen zijn en je nog steeds geen log ziet, kan je de volgende zaken proberen:
   - Zorg ervoor dat je de pagina inlaadt zonder cache (Tip: zet je console open en selecteer daar `Disable cache` in de network tab).
   - Valideer of het lokale pad (deel voor `:`) in de `docker-compose.yml` het juiste relatief pad bevat naar je lokale module folder.
   - Ga na of de module juist geconfigureerd is in de WCM Admin en of deze correct gekoppeld is aan de tenant.
