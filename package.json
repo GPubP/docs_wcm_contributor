@@ -1,7 +1,7 @@
 {
   "name": "docs_wcm_contributor",
   "version": "1.0.0",
-  "description": "Contribution documentation for GPubP Web Content Management",
+  "description": "Contribution documentation for GPubP Content",
   "main": "docs/index.html",
   "directories": {
     "doc": "docs"
@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GPubP/docs_contributor.git"
+    "url": "git+https://github.com/GPubP/docs_wcm_contributor.git"
   },
   "keywords": [
     "documentation",
     "GPuBP"
   ],
   "author": "Jeroen Valcke <jeroen.valcke@digipolis.be>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GPubP/docs_contributor/issues"
+    "url": "https://github.com/GPubP/docs_wcm_contributor/issues"
   },
-  "homepage": "https://github.com/GPubP/docs_contributor#readme",
+  "homepage": "https://github.com/GPubP/docs_wcm_contributor#readme",
   "dependencies": {
     "docsify": "^4.12.2"
   }
