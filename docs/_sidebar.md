@@ -47,6 +47,7 @@
     * [Content-types module](/content/api-references.md "GPubP Content - API referentie")
 
 * Andere
+    * [WCM Modules](/content/wcm-modules.md "GPubP Content - WCM Module lijst")
     * [Contributie](/content/contributing.md "GPubP Content - Contributie")
     * [Changelog](/CHANGELOG.md "GPubP Content - Changelog")
 
