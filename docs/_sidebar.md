@@ -1,7 +1,10 @@
 <!-- docs/_sidebar.md -->
+* Introductie
+   * [Welkom](/README.md "Welkom")
+   * [GPubP](/content/gpubp.md "GPubP")
 
 * Getting Started
-    * [Introductie](/README.md "GPubP Content beheer - Getting started")
+    * [Overzicht](/content/getting-started.md)
     * [Architectuur](/content/architecture/index.md "GPubP Content beheer - Architectuur")
     * [Core principes](/content/core-principles.md "GPubP Content beheer - Core principes")
     * [Setup](/content/setup/index.md "GPubP Content beheer - Setup")

@@ -2,9 +2,9 @@
 
 <img src="http://cdn.antwerpen.be/digipolis_branding_scss/5.0.0/assets/images/digipolis-logo.svg" alt="" width="144" height="72">
 
-# Digipolis GPubP - Content <small>v4</small>
+# Antwerp GPubP Content <small>v4</small>
 
-> Een gids voor contributors
+> Documentatie voor contributors
 
 - Een handige gids voor voor het uitbreiden van de WCM via modules
 - Vol met voorbeelden, basis spelregels en praktische tips

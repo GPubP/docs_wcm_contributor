@@ -1,11 +1,11 @@
-# GPubP Content beheer documentatie
+# Documentatie voor GPubP - Content
 
-Ga naar de [GPubP Content beheer documentatie](https://gpubp.github.io/docs_wcm_contributor/#/)
+Ga naar de [GPubP Content documentatie site](https://gpubp.github.io/docs_wcm_contributor/#/)
 
-## Setup
-First install the dependencies with: <br>
+## setup
+Om de documentatie lokaal op te zetten, clone je deze repo en installeer je de npm packages<br>
 `npm i`<br>
 
-Then start the documentation locally by running: <br>
+Start de documentatie site lokaal via <br>
 `npm start`
 
