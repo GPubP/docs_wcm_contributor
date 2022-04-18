@@ -1,5 +1,5 @@
-# GPubP Content beheer
-GPubP Content beheer is een generiek en modulair beheersplatform dat voornamelijk ingezet wordt als content beheer systeem (CMS).\
+# GPubP - Content beheer
+GPubP - Content beheer is een generiek en modulair beheersplatform dat voornamelijk ingezet wordt als content beheer systeem (CMS).\
 Deze documentatie geeft je de nodige informatie en tools om zelf functionaliteit te ontwikkelen voor dit systeem in de vorm van modules.
 
 ## Getting started
