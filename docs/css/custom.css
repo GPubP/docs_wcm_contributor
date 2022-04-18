@@ -62,10 +62,6 @@ a.anchor,
     margin: 0;
 }
 
-blockquote p {
-    font-family: "Sun Antwerpen", sans-serif;
-}
-
 .sidebar {
     border-right-color: #949494;
     color: #141414;
@@ -142,6 +138,8 @@ body.close .sidebar-toggle {
 
 .markdown-section blockquote p {
     font-weight: normal;
+    color: #6f6f6f;
+    font-family: "Sun Antwerpen", sans-serif;
 }
 
 .markdown-section a {

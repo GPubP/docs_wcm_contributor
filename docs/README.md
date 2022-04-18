@@ -7,7 +7,7 @@ Wil je meteen van start gaan, bekijk dan de [getting started](/content/getting-s
 
 ## Contributing & Feedback
 
-Heb je nog een vraag of een idee om iets te verbeteren/bij te dragen? Kijk even naar de [Contributie](/content/contributing.md)
+Heb je nog een vraag of een idee om iets te verbeteren/bij te dragen? Kijk even naar de [Contributie](/CONTRIBUTING.md)
 
 ## Changelog documentatie
 
