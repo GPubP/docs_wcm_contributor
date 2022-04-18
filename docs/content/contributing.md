@@ -1,36 +1,38 @@
-## Community
+# Community
 
-!> **Todo:** Deze contributing guide is een copy/paste van Antwerp UI. We moeten hier nog over nadenken en aanpassen.
+GPubP is een community-driven project dat bestaat uit core en een contributie onderdelen. Zin om mee te contribueren, hier enkele tips en spelregels.
 
-Antwerp UI is a community-driven project, where everyone is free to use and contribute. We would love for you to contribute too. Here are some tips to help you along.
 
-### Be kind
+## Be kind
 
-Even if we don't explicitly mention it in every repo, we believe that empathy helps us make better tools. We have a code of conduct that reflects this.
+Zie je iets wat je niet aanstaat, breng dan liever een verbetering aan in plaats van erover te klagen ;). Beschouw de contributors als je collega's ook al werken ze voor andere organisaties. Het einddoel is een kwalitatief product, van wie en waar ook de code komt.
 
-### GitHub
+## GitHub
 
-Our repositories are found on GitHub, and generally, unless otherwise specified, we prefer GitHub Flow and Pull Requests as the way to receive contributions. Do check the contributing.md file in every repo for more details, or for exceptions to this rule.
+Alle code is beschikbaar op github. Zowel deze documentatie als de effectieve code van het Generiek Publicatie Platform. Maak je zelf een eigen contributie module, zorg dan dat de code ervan op github staat onder de [GPubP organisatie](https://github.com/GPubP). 
 
-If you're unsure of how to contribute, don't hesitate to ask on the #antwerp-ui-ngx or #antwerp-ui-react slack channel. You can easily join our DigAnt Café slack community here.
+Ben je niet helemaal zeker? Vraag het even na op het :fa-brands fa-slack: [GPubP WCM slack kanaal](https://dgpls.slack.com/archives/C02BCF3SY4R) 
 
-### Maintainers
+## Maintainers
 
-Antwerp UI consists of many different repositories, each with different maintainers. Check the maintainers page to find out who the maintainer is of any particular repo. The maintainer's job consists of:
+### Product
+Digipolis beheert het product en de [roadmap](https://github.com/GPubP/getting-started/blob/main/RELEASE.md). Ontbreekt er een feature, niet zeker wanneer een bug wordt opgelost? Voor meer info kan je steeds terecht bij:
+* erik.lenaerts@digipolis.be
+* hans.kuyken@digipolis.be
 
-Answering questions
-Reviewing contributions
-Fixing issues
-Building features
-To make the job of the maintainer easier, we like it when bugs and feature requests are reported as issues on the relevant repo.
+### Technical
+De Technical maintainer van het GPubP Content luik is Studio Hyperdrive (SHD). Zij bewaken de eindkwaliteit van alle code, zowel core als contributies. 
 
-> Be aware that asking for a feature is not the same as getting it. Sometimes a repo is not in active feature development, sometimes a maintainer has other work on their plate, sometimes it's just not the right feature for the problem at hand. Features with the label help-wanted are good opportunities for you to contribute.
+Studio Hyperdrive kan je helpen met: 
+- een kickoff van je contributie project om je op het juiste spoor te zetten
+- een review van je contributie code met tips om te verbeteren, vaak gaat het over aangeven van helper functies en/of het gebruik van design patterns
+- beantwoorden van vragen
+- uitbreiding aan de core voorzien
+- onderhoud van deze [WCM contributie gids](/README.md)
 
-### Roadmap
+> [!warning]
+> Nieuwe feaures of changes aan Studio Hyperdrive vragen kan, maar op't einde van de rit wordt het beslist door het [Product](#product) team.
 
-The direction of the different parts of Antwerp UI is not always clear. To discuss roadmap and policy these are the best places:
+### Vragen ?
 
-Quick questions are best asked on the #acantwerppaas-ui-ngx slack channel or #antwerp-ui-react slack channel.
-Longer questions specific to a particular repo are best reported as issues on that repo.
-Longer questions about Antwerp UI in general can be reported as issues on the Antwerp UI repo.
-If we know something about the roadmap of a particular repo then it will be in the README of that repo. Any information on the overall direction of Antwerp UI will be in the main Antwerp UI README.
+Is deze contributie gids onvolledig, zit je vast of heb je een idee? Laat het ons weten op het :fa-brands fa-slack: [slack kanaal](https://dgpls.slack.com/archives/C02BCF3SY4R)

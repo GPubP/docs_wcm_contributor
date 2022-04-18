@@ -62,6 +62,10 @@ a.anchor,
     margin: 0;
 }
 
+blockquote p {
+    font-family: "Sun Antwerpen", sans-serif;
+}
+
 .sidebar {
     border-right-color: #949494;
     color: #141414;

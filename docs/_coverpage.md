@@ -4,7 +4,7 @@
 
 # Antwerp GPubP Content <small>v4</small>
 
-> Documentatie voor contributors
+> ... voor contributors
 
 - Een handige gids voor voor het uitbreiden van de WCM via modules
 - Vol met voorbeelden, basis spelregels en praktische tips
