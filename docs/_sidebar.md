@@ -1,7 +1,9 @@
 <!-- docs/_sidebar.md -->
 * Introductie
-   * [Welkom](/README.md "GPubP Content - Welkom")
-   * [High level](/content/gpubp.md "GPubP Content - High level")
+    * [Welkom](/README.md "GPubP Content - Welkom")
+    * [High level](/content/gpubp.md "GPubP Content - High level")
+    * [Contributie](/content/contributing.md "GPubP Content - Contributie")
+    * [Changelog](/CHANGELOG.md "GPubP Content - Changelog")
   
 * Getting Started
     * [Overzicht](/content/getting-started.md)
@@ -14,6 +16,7 @@
         * [WCM](/content/setup/wcm/index.md "GPubP Content - WCM setup")
             * [Core](/content/setup/wcm/core.md "GPubP Content - WCM Core setup")
             * [Modules](/content/setup/wcm/modules.md "GPubP Content - WCM modules setup")
+    * [WCM Modules](/content/wcm-modules.md "GPubP Content - WCM Module lijst")
 
 * Developer guides
     * [Overzicht](/content/developer-guides/index.md "GPubP Content - Developer guides")
@@ -45,11 +48,6 @@
     * [Form renderer module](/content/api-references.md "GPubP Content - API referentie")
     * [Content module](/content/api-references.md "GPubP Content - API referentie")
     * [Content-types module](/content/api-references.md "GPubP Content - API referentie")
-
-* Andere
-    * [WCM Modules](/content/wcm-modules.md "GPubP Content - WCM Module lijst")
-    * [Contributie](/content/contributing.md "GPubP Content - Contributie")
-    * [Changelog](/CHANGELOG.md "GPubP Content - Changelog")
 
 * Interessante links
     * [Antwerp API <i class="fa-solid fa-arrow-up-right-from-square"></i>](https://antwerp-api.digipolis.be ':target="_blank"')
