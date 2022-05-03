@@ -5,12 +5,12 @@
 Om onderstaande installatie te kunnen uitvoeren moet je de volgende zaken ter beschikking hebben.\
 De zaken die aangegeven staan als niet verplicht zijn, zaken die je doorgaans enkel nodig hebt als je aan de core zelf wil ontwikkelen.
 
-| Naam                    | Verplicht          |
-|-------------------------|--------------------|
-| Docker                  | :heavy_check_mark: |
-| Digipolis VPN connectie | :heavy_check_mark: |
-| NPM                     | :x:                |
-| NVM                     | :x:                |
+| Naam                    | Verplicht           |
+|-------------------------|---------------------|
+| Docker                  | :fa-solid fa-check: |
+| Digipolis VPN connectie | :fa-solid fa-check: |
+| NPM                     | :fa-solid fa-xmark: |
+| NVM                     | :fa-solid fa-xmark: |
 
 ## Installatie
 

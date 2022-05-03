@@ -1,7 +1,14 @@
-# WCM / Redactie contributie documentatie
+# Welkom
+Deze gids is voor iedereen die wil **contribueren** aan het [GPubP Content](/content/gpubp.md) luik.
 
-Deze documentatie is gemaakt op basis van https://docsify.js.org/#/
+!> Wil je een iets maken met de bouwstenen van het GPubP, bekijk dan [deze gids](https://github.com/GPubP/docs_wcm_consumer).
 
-De effectieve documentatie is geschreven in markdown en zit in de [content](/content) folder
+Wil je meteen van start gaan, bekijk dan de [getting started](/content/getting-started.md).
 
-Wil je meewerken, kijk dan even naar de [contributing](/content/contributing) sectie in de documentatie
+## Contributing & Feedback
+
+Heb je nog een vraag of een idee om iets te verbeteren/bij te dragen? Kijk even naar de [Contributie](/CONTRIBUTING.md)
+
+## Changelog documentatie
+
+De volledige changelog kan je [hier](/CHANGELOG.md) vinden.

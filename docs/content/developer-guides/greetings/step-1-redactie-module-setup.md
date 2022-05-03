@@ -1,4 +1,4 @@
-# Hoofstuk 1: Nieuwe Redactie module opzetten
+# Hoofdstuk 1: Nieuwe Redactie module opzetten
 
 Binnen deze gids gaan we een nieuwe frontend module "Greetings" opzetten op basis van de boilerplate module en deze beschikbaar stellen op onze lokale instantie van de Redactie app.
 
@@ -18,9 +18,9 @@ mv ./redactie-boilerplate_module ./redactie-greetings-shd_module_react
 cd ./redactie-greetings-shd_module_react
 ```
 
-Eens je de boilerplate lokaal binnen getrokken hebt, kan je deze configureren, installeren en publiceren.
+Eens we de boilerplate lokaal binnen getrokken hebben, kunnen we deze configureren, installeren en publiceren.
 
-Als eerste stap herconfigureren moet de package.json opnieuw geconfigureerd worden zodat hier geen verwijzingen meer staan naar de "boilerplate".
+Als eerste stap moet de package.json opnieuw geconfigureerd worden zodat hier geen verwijzingen meer staan naar de "boilerplate".
 ```json
 {
   "name": "@redactie/greetings-[naam/bedrijfsnaam]-module",
@@ -42,7 +42,7 @@ Als eerste stap herconfigureren moet de package.json opnieuw geconfigureerd word
   ],
 ```
 
-Om niet met meerderen dezelfde module aan te maken kan je best de `[naam/bedrijfsnaam]` aanpassen naar je eigen naam of bedrijf (bv. `@redactie/greetings-shd-module`)
+Om niet met meerdere partijen dezelfde module aan te maken kunnen we best de `[naam/bedrijfsnaam]` aanpassen naar ons eigen naam of bedrijf (bv. `@redactie/greetings-shd-module`)
 
 ## Greetings module installeren & publishen
 
@@ -59,7 +59,7 @@ npm version patch
 npm publish
 ```
 
-Het publiceren van een initiële versie is nodig om op deze module te ontwikkelen (zie ook [TODO - Ref naar uitleg hierover]).\
+Het publiceren van een initiële versie is nodig om op deze module te ontwikkelen.\
 Er moet een versie op de Digipolis Nexus repository of main NPM repository staan om deze te kunnen inladen binnen de Redactie app.
 
 ## Greetings module configureren in WCM Admin
@@ -78,7 +78,7 @@ Als laatste moet de nieuw geregistreerde module nog [ingesteld worden op een ten
 
 ## Module lokaal mounten
 
-De module is nu ingesteld op de tenant en zal al doorkomen als je op je lokale instantie van de redactie app navigeert naar de tenant.
+De module is nu ingesteld op de tenant en zal al doorkomen als we op onze lokale instantie van de redactie app navigeert naar de tenant.
 
 <!-- TODO: afbeelding toevoegen van tenant -->
 [TODO: afbeelding]
@@ -97,7 +97,7 @@ server:
    - ../redactie-greetings-shd_module_react:/app/server/niv_modules/redactie-greetings-shd-module-0-0-1:ro
 ```
 
-Om deze nieuwe configuratie door te voeren, moeten de redactie app herstart worden:
+Om deze nieuwe configuratie door te voeren, moet de redactie app herstart worden:
 
 ```bash
 docker-compose down && docker-compose up

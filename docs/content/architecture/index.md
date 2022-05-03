@@ -3,7 +3,7 @@
 De GPubP Content beheer bestaat uit 2 systemen.\
 Een backend (WCM) die een aantal API's voorziet en een interface (Redactie) op deze API's.
 
-> De termen "WCM" en "Redactie" worden doorgaans door elkaar gebruikt maar binnen deze documentatie hebben ze steeds een verschillende betekenis:
+> [!note] De termen "WCM" en "Redactie" worden doorgaans door elkaar gebruikt maar binnen deze documentatie hebben ze steeds een verschillende betekenis:
 > - Web Content Management (WCM): Alle backend (micro)services
 > - Redactie: Interface op de WCM
 

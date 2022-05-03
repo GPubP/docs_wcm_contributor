@@ -45,7 +45,7 @@ De WCM Admin interface is beschikbaar op:
 9. Klik op `confirm`
 10. Klik op 'Save modules`
 
-> **Opgelet!** \
+> [!warning]
 > De module moet beschikbaar zijn met de gekozen versie voor deze te registeren.\
 > Indien dit niet juist geregistreerd is, kan dit impact hebben op de installatie van andere modules.
 
@@ -76,7 +76,7 @@ De volume mounting wordt als het volgt opgebouwd:\
 2. run `docker-compose down` (indien er reeds een instantie draait)
 3. run `docker-compose up`
 
-> **Opgelet!** \
+> [!warning]
 > De `:ro` op het einde is zeer belangrijk!\
 > Dit zorgt ervoor dat je lokale module folder niet overschreven wordt.
 
