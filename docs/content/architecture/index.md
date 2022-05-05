@@ -35,7 +35,7 @@ De WCM maakt gebruik van zowel "interne" engines als "externe" engines waarbij i
 ### Business services
 
 Business services werken volledig binnen de WCM context en hebben meestal (maar niet altijd) een connectie met 1 of meerdere engines.\
-Elke service werkt in functie van een specifieke entiteit of functionaliteit.\
+Elke service werkt in functie van een specifieke entiteit of functionaliteit.
 
 Deze services staan o.a. in voor de volgende taken:
 - Engine data beschikbaar stellen
@@ -47,7 +47,7 @@ Deze services staan o.a. in voor de volgende taken:
 ### Gateway
 
 De gateway is de toegangspoort (slimme proxy) waarmee de redactie interface en afnemers kunnen spreken.\
-Daarnaast biedt deze service ook een volledige swagger documentatie per tenant en security level.
+Daarnaast biedt deze service ook een volledige swagger documentatie per tenant en per security level .
 
 De proxy voorziet de volgende twee zaken:
 - Gaat op basis van de route, contract, tenant en credentials na of deze route wel toegankelijk is
@@ -69,14 +69,14 @@ De Redactie is een modulaire interface op de WCM API.\
 Deze applicatie biedt de nodige tools om:
 - te authenticeren
 - multitenancy te ondersteunen
-- Modules in te laden
-- Routing & navigatie af te handelen
-- Communicatie tussen modules mogelijk te maken.
+- modules in te laden
+- routing & navigatie af te handelen
+- communicatie tussen modules mogelijk te maken.
 
 Om dit te realiseren is deze applicatie opgedeeld in de volgende onderdelen:
 - BFF
 - twee React apps (tenant overview & tenant)
-- Module installer service
+- module installer service
 - modules
 
 Schematisch staan deze onderdelen als volgt t.o.v. elkaar:
