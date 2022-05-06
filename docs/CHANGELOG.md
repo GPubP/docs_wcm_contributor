@@ -1,10 +1,11 @@
 # Changelog
 
-## Unreleased (1.1.0): 2022-05-06
+## [1.1.0]: 2022-05-06
 
 ### Added
  - Greetings guide - Hoofdstuk 3 - Nieuwe WCM module opzetten
  - Greetings guide - Hoofdstuk 4 - Greetings endpoint voorzien
+ - Greetings guide - Hoofdstuk 5 - Greetings endpoint aanspreken
  - Best practices - pagina toegevoegd met "coming soon" bericht
  - WCM setup - module toevoegen aan een tenant
  - WCM setup - Tenant aanmaken
