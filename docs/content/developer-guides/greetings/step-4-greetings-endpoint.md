@@ -2,7 +2,7 @@
 
 We hebben nu een [eigen BSL service draaien binnen de WCM context](/content/developer-guides/greetings/step-3-wcm-module-setup.md).
 
-Binnen dit hoofdstuk gaan we een greetings enpoint beschikbaar stellen om een begroeting op te vragen.\
+Binnen dit hoofdstuk gaan we een greetings endpoint beschikbaar stellen om een begroeting op te vragen.\
 We voorzien hierbij de nodige rechten en rechten checks zodat enkel gebruikers met een `greetings-read` recht toegang krijgen tot de endpoint.
 
 ## Stap 1: NestJS module opzetten
@@ -92,7 +92,7 @@ Onze module is nu opgezet maar deze gaat by default alle calls toelaten, ook cal
 >  - Gaat op basis van de route, contract, tenant en credentials na of deze route wel toegankelijk is
 >  - Vervangt een apikey (of application identifier) door een tenant context in de vorm van een JWT token
 
-**Dit mag dus niet!** Daarom voegen we de volgende middleware toe aan onze moddule:
+**Dit mag dus niet!** Daarom voegen we de volgende middleware toe aan onze module:
 
 ```ts
 // server/src/modules/greetings/greetings.module.ts
@@ -187,7 +187,7 @@ curl --location --request GET 'http://localhost:7200/proxy/admin/greetings/v1/gr
 }
 ```
 
-Als we surfen naar `http://localhost:60101/docs/admin` en `http://localhost:7200/docs/tenant-test-1/admin/#/Greetings/GreetingsController_getGreeting` zien we het resultaat van onze documenatie.
+Als we surfen naar `http://localhost:60101/docs/admin` en `http://localhost:7200/docs/tenant-test-1/admin/#/Greetings/GreetingsController_getGreeting` zien we het resultaat van onze documentatie.
 
 ![Documentatie van greetings module](../../../assets/greetings-module-bsl-docs-1.png ':size=900')
 
@@ -286,7 +286,7 @@ Nu ziet onze documentatie er al een pak beter uit:
 Onze call is nu correct aangemaakt en enkel toegankelijk via de wcm-gateway maar onze call wordt nog niet beschermd achter een security-right.\
 De call is dus toegankelijk voor iedereen dat toegang heeft tot de tenant en niet voor enkele gebruikers die tot een bepaalde rol behoren.
 
-In dit geval zou dit ok zijn maar ter illustratie gaan toch onze call beschermen achter een recht.
+In dit geval zou dit ok zijn maar ter illustratie gaan we toch onze call beschermen achter een recht.
 
 Als eerste stap moeten we de rechten kenbaar maken bij BraaS (het rollen & rechten systeem van het WCM).
 Dit kunnen we doen door de `@wcm/braas-bsl-helper` helper te gebruiken als volgt in de Greetings module:
@@ -338,7 +338,7 @@ wcm-boilerplate-bsl |   removed: { fulfilled: [], rejected: [] }
 wcm-boilerplate-bsl | }
 ```
 
-Je zonder `created.fulfilled` dat een recht is aangemaakt is geweest.
+Je ziet onder `created.fulfilled` dat een recht is aangemaakt geweest.
 
 ## Stap 6: Route afschermen achter een recht
 
