@@ -214,7 +214,7 @@ export class GreetingsFacade extends BaseMultiEntityFacade<
         return this.service
             .getGreeting()
             .then(greeting => {
-                this.store.setItemValue(MAIN_ID, { id: 'main', message: greeting.message });
+                this.store.setItemValue(MAIN_ID, greeting);
             })
             .catch(error => {
                 this.store.setItemError(MAIN_ID, error);
