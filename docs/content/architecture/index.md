@@ -47,7 +47,7 @@ Deze services staan o.a. in voor de volgende taken:
 ### Gateway
 
 De gateway is de toegangspoort (slimme proxy) waarmee de redactie interface en afnemers kunnen spreken.\
-Daarnaast biedt deze service ook een volledige swagger documentatie per tenant en per security level .
+Daarnaast biedt deze service ook een volledige swagger documentatie per tenant en per security level.
 
 De proxy voorziet de volgende twee zaken:
 - Gaat op basis van de route, contract, tenant en credentials na of deze route wel toegankelijk is

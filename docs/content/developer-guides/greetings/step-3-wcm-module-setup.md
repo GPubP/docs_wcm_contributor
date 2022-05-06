@@ -192,7 +192,7 @@ curl --location --request GET 'http://localhost:7200/proxy/admin/greetings/statu
 ```
 Dit geeft een `401 Unauthorized` terug. Dit logisch want we hebben nog geen credential meegegeven die toegang heeft tot een tenant dat we willen aanspreken.
 
-We moeten dus eerst onze eigen lokal credential maken.
+We moeten dus eerst onze eigen lokale credential maken.
 
 1. Navigeer naar http://localhost:3999 en log in indien nodig.
 2. Navigeer naar `Server credentials`.
