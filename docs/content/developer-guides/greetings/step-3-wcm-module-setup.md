@@ -37,6 +37,8 @@ Als eerste stap moet de package.json opnieuw geconfigureerd worden zodat hier ge
 }
 ```
 
+Voer bovenstaande uit in zowel `./package.json` als in `./server/package.json`.
+
 ## Stap 2: Greetings BSL service installeren
 
 We kunnen onze nieuwe bsl service builden door het volgende commando te runnen:
@@ -56,7 +58,7 @@ npm i
 ## Stap 3: Greetings BSL environment voorbereiden
 Nadat alles geïnstalleerd is, kunnen we de juiste variabelen voorzien in de configuratie van deze BSL service zodat deze straks op een correcte manier met de WCM core en andere modules kan samenwerken.
 
-### Poort configureren
+### Stap 3.1: Poort configureren
 Elke service heeft zijn eigen poort die niet mag overlappen met een andere poort op je systeem. Het is dus belangrijk om in de `docker-compose.yml` file de juiste poorten te exposen. Een overzicht van alle reeds ingenomen poorten van core modules vind je [hier] (!TODO).
 
 Voor onze module zullen we de demo module poort `60101` gebruiken.
@@ -70,14 +72,22 @@ services:
       # App port
       - 60101:60101
       # Debug port
-      - 160101:160101
+      - 50101:50101
 ```
 
 De eerste poort wordt gebruikt door onze service zelf. De 2de poort is een debug poort en kan gebruikt worden om je lokale debugger te connecteren.
 
 We hebben nu aan onze docker omgeving laten weten dat we een service van binnen onze container willen beschikbaar stellen op ons host machine.\
 Als volgende stap zulllen we onze service zo configureren dat deze de juiste poorten gebruikt binnen de docker container.
-### Environment variabelen
+
+In de `Dockerfile.dev` zorgen we ervoor dat de `--inspect` poort overeenkomt met de debug poort, ingesteld in de `docker-compose.yml` file.
+```bash
+...
+# Start application with live reload
+CMD ts-node-dev -r tsconfig-paths/register --transpileOnly --poll --inspect=0.0.0.0:50101 -- index.ts
+````
+
+### Stap 3.2: Environment variabelen
 In ons scenario moeten we maar 2 environment variabelen aanpassen:
 - De poort waarop onze BSL service moet luisteren
 - De apikey dat de BSL service zal gebruiken zich te identificeren bij de WCM Admin.
@@ -96,7 +106,7 @@ Om onze BSL module binnen de WCM context te doen draaien, moeten we de volgende 
 2. BSL Credential aanmaken
 3. BSL module registreren bij een tenant
 
-### BSL Module registreren
+### Stap 4.1: BSL Module registreren
 De module moet eerst geregistreerd worden in de WCM Admin interface zodat deze gekend is door de gateway en andere modules.
 
 1. Navigeer naar http://localhost:3999 en log in indien nodig.
@@ -114,7 +124,7 @@ De module moet eerst geregistreerd worden in de WCM Admin interface zodat deze g
 
 8. Voeg een versie toe door te klikken op `Add version`.
 9. Vul hier versie nummer `1.0.0` in.
-10. Vul het endpoint in van de module `host.docker.internal:60101`
+10. Vul het endpoint in van de module `http://host.docker.internal:60101`
 11. Voeg geen dependencies in aangezien we er voorlopig nog geen hebben.
 
 ![Module versie aanmaken in WCM Admin interface](../../../assets/greetings-module-bsl-module-version-conf.png ':size=600')
@@ -122,7 +132,7 @@ De module moet eerst geregistreerd worden in de WCM Admin interface zodat deze g
 12. Klik op `confirm`.
 13. Klik op `Save modules`.
 
-### BSL Credential aanmaken
+### Stap 4.2: BSL Credential aanmaken
 De Greetings module kan pas informatie ophalen over zijn WCM context als hij een credential (apikey) gebruikt dat gekoppeld is aan de module die we net geregistreerd hebben in de WCM Admin.
 
 1. Navigeer naar http://localhost:3999 en log in indien nodig.
@@ -142,7 +152,7 @@ De Greetings module kan pas informatie ophalen over zijn WCM context als hij een
 
 10. Klik op `Save credentials`.
 
-### BSL module registreren bij een tenant
+### Stap 4.3: BSL module registreren bij een tenant
 Nu de module juist geconfigureerd is kunnen we hem toevoegen aan onze tenant (= website in WCM Admin interface).
 
 1. Navigeer naar http://localhost:3999 en log in indien nodig.
@@ -161,6 +171,53 @@ Van zodra bovenstaande zaken in orde zijn kan je de module opstarten met het vol
 
 ```bash
 docker-compose up
+```
+
+## Stap 6: Greetings BSL testen
+Om te testen of de service draait, kan je surfen naar: http://localhost:60101/status. \
+Als je volgend bericht krijgt, draait de server correct.
+
+```json
+{
+  version: "1.0.0",
+  success: true
+}
+```
+
+Hiermee testen we nog niet of de service juist werkt binnen de WCM contenxt. Om dit na te gaan, moeten we de service aanspreken via de wcm-gateway.\
+De wcm-gateway draait lokaal op `http://localhost:7200`. We kunnen dus testen of de WCM context weet heeft van onze nieuwe module en deze dus juist ingeladen is door de volgende call uit te voeren:
+
+```bash
+curl --location --request GET 'http://localhost:7200/proxy/admin/greetings/status'
+```
+Dit geeft een `401 Unauthorized` terug. Dit logisch want we hebben nog geen credential meegegeven die toegang heeft tot een tenant dat we willen aanspreken.
+
+We moeten dus eerst onze eigen lokal credential maken.
+
+1. Navigeer naar http://localhost:3999 en log in indien nodig.
+2. Navigeer naar `Server credentials`.
+3. klik op `New server credential` onderaan de pagina.
+4. Vul een administratieve naam in (vrij te kiezen)
+5. Vink `Enabled` aan.
+6. Selecteer bij het type `API key`.
+7. Vul een eigen apikey in (bv. `000-000`, maar vrij te kiezen).
+8. Selecteer als service type `Consumer`.
+9. Selecteer de tenant waarop onze BSL module is ingesteld (bv. tenant-test-3).
+10. Klik op `Save credentials`
+
+![Server credentials aanmaken in WCM Admin interface](../../../assets/greetings-module-personal-cred.png ':size=600')
+
+Als we nu onze apikey meegeven bij het opvragen van de status via de gateway, krijgen we de juiste response terug:
+
+```bash
+curl --location --request GET 'http://localhost:7200/proxy/admin/greetings/status' \
+--header 'apikey: 000-000'
+```
+```json
+{
+    "version": "1.0.0",
+    "success": true
+}
 ```
 
 ## FAQ
