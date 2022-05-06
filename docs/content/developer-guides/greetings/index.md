@@ -7,7 +7,8 @@ Deze begroeting is random en komt vanuit een eigen greetings busines service bin
 ## Voorbereiding
 
 Om deze gids te kunnen volgen heb je de volgende zaken nodig
-- Je hebt de redactie reeds [lokaal draaien](/content/setup/redactie/setup).
+- Je hebt De Redactie reeds [lokaal draaien](/content/setup/redactie/setup).
+- Je hebt het WCM reeds [lokaal draaien](/content/setup/wcm/index.md)
 
 ## Hoofdstukken
 

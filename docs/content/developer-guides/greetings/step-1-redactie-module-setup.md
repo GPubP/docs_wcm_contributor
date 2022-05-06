@@ -2,7 +2,7 @@
 
 Binnen deze gids gaan we een nieuwe frontend module "Greetings" opzetten op basis van de boilerplate module en deze beschikbaar stellen op onze lokale instantie van de Redactie app.
 
-## Vertrekken van de boilerplate module
+## Stap 1: Vertrekken van de boilerplate module
 
 Bij het opzetten van een nieuwe module raden we aan om altijd te beginnen van de [boilerplate module](https://bitbucket.antwerpen.be/projects/REDA/repos/redactie-boilerplate_module/browse).
 
@@ -44,7 +44,7 @@ Als eerste stap moet de package.json opnieuw geconfigureerd worden zodat hier ge
 
 Om niet met meerdere partijen dezelfde module aan te maken kunnen we best de `[naam/bedrijfsnaam]` aanpassen naar ons eigen naam of bedrijf (bv. `@redactie/greetings-shd-module`)
 
-## Greetings module installeren & publishen
+## Stap 2: Greetings module installeren & publishen
 
 Daarna moet de module een eerste maal geïnstalleerd, gebuild en gepubliceerd worden.
 
@@ -62,7 +62,7 @@ npm publish
 Het publiceren van een initiële versie is nodig om op deze module te ontwikkelen.\
 Er moet een versie op de Digipolis Nexus repository of main NPM repository staan om deze te kunnen inladen binnen de Redactie app.
 
-## Greetings module configureren in WCM Admin
+## Stap 3: Greetings module configureren in WCM Admin
 
 Van zodra de module beschikbaar is in de registry, kunnen we deze [module configureren in de WCM Admin interface](/content/setup/redactie/dev-setup?id=module-registreren-in-wcm-admin-interface).
 
@@ -76,7 +76,7 @@ Voeg daarna een versie aan deze module toe met de volgende waarden en bewaar de 
 
 Als laatste moet de nieuw geregistreerde module nog [ingesteld worden op een tenant](/content/setup/redactie/dev-setup?id=module-instellen-op-tenant)
 
-## Module lokaal mounten
+## Stap 4: Module lokaal mounten
 
 De module is nu ingesteld op de tenant en zal al doorkomen als we op onze lokale instantie van de redactie app navigeert naar de tenant.
 
@@ -105,7 +105,7 @@ docker-compose down && docker-compose up
 
 Meer info over modules lokaal mounten vind je [hier](/content/setup/redactie/dev-setup?id=module-koppelen-aan-lokale-redactie-instantie).
 
-## Testen
+## Stap 5: Testen
 
 We hebben nu alle nodige stappen ondernomen om de module lokaal werkende te krijgen.\
 We kunnen dit nu gaan valideren door een aanpassing te doen in onze lokale versie van de module en dan na te gaan of deze aanpassing doorkomt.
