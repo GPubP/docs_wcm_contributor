@@ -4,7 +4,8 @@
 
 ### Added
  - Greetings guide - Hoofdstuk 3 - Nieuwe WCM module opzetten
- - Best practices -  pagina toegevoegd met "coming soon" bericht
+ - Greetings guide - Hoofdstuk 4 - Greetings endpoint voorzien
+ - Best practices - pagina toegevoegd met "coming soon" bericht
  - WCM setup - module toevoegen aan een tenant
  - WCM setup - Tenant aanmaken
 
