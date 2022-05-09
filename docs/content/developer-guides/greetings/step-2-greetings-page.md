@@ -16,7 +16,7 @@ Daarna maken we een eigen nieuwe module aan `Greetings`. Dit doen we door onder 
 ![Greetings view folderstructuur](../../../assets/greetings-module-greetings-folder.png)
 
 In de `views/Greetings/Greetings.tsx` file maken we de React component die we willen renderen als de Greetings pagina opgeroepen wordt.
-```ts
+```tsx
 // public/lib/views/Greetings/Greetings.tsx
 import React, { FC } from 'react';
 
@@ -138,7 +138,7 @@ import { Greetings } from './views/Greetings';
 ```
 
 We kunnen nu ook de titel in onze Greetings vanuit onze translations laten komen:
-```ts
+```tsx
 // public/lib/views/Greetings/Greetings.tsx
 import React, { FC } from 'react';
 
@@ -173,7 +173,7 @@ Onze Greetings pagina ziet er nog niet echt uit zoals ander pagina's binnen de R
 Dit komt omdat we nog geen gebruik maken van de uitgebreide set aan UI componenten dat de Editorial UI en Antwerp UI voorzien.
 
 Al eerste beginnen we met onze Greetings pagina van een `ContextHeader` te voorzien.
-```ts
+```tsx
 // public/lib/views/Greetings/Greetings.tsx
 import { Container, ContextHeader } from '@acpaas-ui/react-editorial-components';
 ...
