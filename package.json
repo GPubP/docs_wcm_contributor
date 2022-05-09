@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "npx docsify serve ./docs"
+    "start": "npx docsify serve ./docs --port=4000"
   },
   "repository": {
     "type": "git",
