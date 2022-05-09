@@ -88,7 +88,7 @@ npm i @datorama/akita -D
 
 > [!note]
 > We installeren Akita als dev dependency omdat we deze niet mee hoeven te packagen binnen onze bundel.\
-> De Redactie app gaat heeft reeds Akita beschikbaar zijn zijn core bundel en zorgt ervoor dat deze instantie van Akita toegankelijk is binnen onze module.
+> Binnen de Redactie app is Akita reeds aanwezig in zijn core bundel. De App zorgt ervoor dat deze instantie van Akita toegankelijk is binnen onze module.
 
 Eens Akita geïnstalleerd is, kunnen we onze store aanmaken door de volgende bestanden te voorzien:
 
@@ -333,10 +333,11 @@ Nu krijgen we op onze pagina het volgende te zien:
 
 ![Documentatie van greetings module](../../../assets/greetings-module-welkom.png ':size=700')
 
-Als laatste kunnen we onze container inhoudt nog wrappen in een `DataLoader` zodat er een laadicoon te zien is tot de begroeting is ingeldaden.
+Als laatste kunnen we onze container inhoud nog wrappen in een `DataLoader` zodat er een laadicoon te zien is tot de begroeting is ingeladen.
 
 ```tsx
 // public/lib/views/Greetings/Greetings.tsx
+import { DataLoader, ... } from '@redactie/utils';
 ...
 const Greetings: FC = () => {
     ...
