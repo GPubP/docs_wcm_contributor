@@ -1,7 +1,7 @@
 # Hoofdstuk 5: Greetings endpoint aanspreken
 
 We hebben nu een BSL die een `/v1/greetings` endpoint beschikbaar stelt.
-Als laatste stap willen we dit endpoint aanspreken vanuit onze greetings frontend module (zie [hoofdstuk 1](/content/developer-guides/step-1-redactie-module-setup.md) en [hoofdstuk 2](/content/developer-guides/step-2-greetings-page.md)).
+Als laatste stap willen we deze endpoint aanspreken vanuit onze greetings frontend module (zie [hoofdstuk 1](/content/developer-guides/step-1-redactie-module-setup.md) en [hoofdstuk 2](/content/developer-guides/step-2-greetings-page.md)).
 
 ## Stap 1: Redactie naar lokale setup verwijzen.
 
