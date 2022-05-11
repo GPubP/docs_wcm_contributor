@@ -8,6 +8,7 @@
 * Getting Started
     * [Overzicht](/content/getting-started.md)
     * [Architectuur](/content/architecture/index.md "GPubP Content - Architectuur")
+    * [Best practices](/content/best-practices.md "GPubP Content - Best principes")
     * [Core principes](/content/core-principles.md "GPubP Content - Core principes")
     * [Setup](/content/setup/index.md "GPubP Content - Setup")
         * [Redactie](/content/setup/redactie/index.md "GPubP Content - Redactie setup")

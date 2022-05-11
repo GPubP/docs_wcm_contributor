@@ -4,7 +4,7 @@ Na [stap 1](./step-1-redactie-module-setup.md) kunnen we effectief starten aan h
 We voorzien binnen dit hoofdstuk een "greetings" pagina dat de gebruiker begroet.\
 Deze pagina maken we beschikbaar door een een menu item toe te voegen aan het algemene menu van de Redactie app.
 
-## Greetings view aanmaken
+## Stap 1: Greetings view aanmaken
 
 De boilerplate code bevat reeds een voorbeeld view `HelloWorld`.\
 Deze view mag verwijderd worden aangezien we deze niet meer zullen gebruiken.
@@ -16,7 +16,7 @@ Daarna maken we een eigen nieuwe module aan `Greetings`. Dit doen we door onder 
 ![Greetings view folderstructuur](../../../assets/greetings-module-greetings-folder.png)
 
 In de `views/Greetings/Greetings.tsx` file maken we de React component die we willen renderen als de Greetings pagina opgeroepen wordt.
-```ts
+```tsx
 // public/lib/views/Greetings/Greetings.tsx
 import React, { FC } from 'react';
 
@@ -28,7 +28,7 @@ export default Greetings;
 ```
 
 Momenteel bevat deze, zoals je ziet, enkel nog maar een titel maar dit zullen we later nog uitbreiden.
-## Greetings pagina koppelen aan het menu
+## Stap 2: Greetings pagina koppelen aan het menu
 
 We hebben nu een Greetings view gemaakt maar deze zal voorlopig nog niets doen tot we aan de Core aangeven wanneer deze gerenderd moet worden.
 Om de Greetings module te kunnen renderen binnen onze tenant, moeten we deze eerst koppelen aan een route.
@@ -100,7 +100,7 @@ Nu wordt ons begroeting menu item getoond waar het hoort. In het begin!
 
 ![Greetings pagina in menu als eerste](../../../assets/greetings-module-page-3.png ':size=800')
 
-## Vertalingen
+## Stap 3: Vertalingen
 
 <!-- TODO: plaatst link naar best practices -->
 We hebben nu onze Greetings pagina voorzien van een titel met een vaste tekst. Dit is nog niet volgens onze [best practices]().
@@ -138,7 +138,7 @@ import { Greetings } from './views/Greetings';
 ```
 
 We kunnen nu ook de titel in onze Greetings vanuit onze translations laten komen:
-```ts
+```tsx
 // public/lib/views/Greetings/Greetings.tsx
 import React, { FC } from 'react';
 
@@ -167,13 +167,13 @@ Als we nu de pagina refreshen krijgen we het volgende te zien:
 
 ![Vertaalde Greetings pagina](../../../assets/greetings-module-page-4.png ':size=800')
 
-## Editorial UI gebruiken
+## Stap 4: Editorial UI gebruiken
 
 Onze Greetings pagina ziet er nog niet echt uit zoals ander pagina's binnen de Redactie.\
 Dit komt omdat we nog geen gebruik maken van de uitgebreide set aan UI componenten dat de Editorial UI en Antwerp UI voorzien.
 
 Al eerste beginnen we met onze Greetings pagina van een `ContextHeader` te voorzien.
-```ts
+```tsx
 // public/lib/views/Greetings/Greetings.tsx
 import { Container, ContextHeader } from '@acpaas-ui/react-editorial-components';
 ...
@@ -189,7 +189,7 @@ const Greetings: FC = () => {
     );
 };
 ```
-![Greetings pagina met context header](../../../assets//greetings-module-page-5.png ':size=800')
+![Greetings pagina met context header](../../../assets/greetings-module-page-5.png ':size=800')
 
 Dat ziet er al beter uit maar nog niet helemaal zoals op andere pagina's. We ontbreken nog breadcrumbs.
 de breadcrumbs kunnen we bereken op basis van de `useBreadcrumbs` hook.

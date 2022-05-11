@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0]: 2022-05-06
+
+### Added
+ - Greetings guide - Hoofdstuk 3 - Nieuwe WCM module opzetten
+ - Greetings guide - Hoofdstuk 4 - Greetings endpoint voorzien
+ - Greetings guide - Hoofdstuk 5 - Greetings endpoint aanspreken
+ - Best practices - pagina toegevoegd met "coming soon" bericht
+ - WCM setup - module toevoegen aan een tenant
+ - WCM setup - Tenant aanmaken
+
+### Modified
+ - Een aantal verkeerde links aangepast
+ - Kleinere copy changes
+ - Standaard poort voor het opstarten van dev omgeving aangepast naar 4000 om conflicten met Redactie app poort te vermijden
+
 ## [1.0.0]: 2022-04-18
 
 ### Added
