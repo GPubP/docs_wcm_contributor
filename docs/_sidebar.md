@@ -18,6 +18,10 @@
             * [Modules](/content/setup/wcm/modules.md "GPubP Content - WCM modules setup")
     * [WCM Modules](/content/wcm-modules.md "GPubP Content - WCM Module lijst")
 
+* Designer guides
+    * [Overzicht](/content/designer-guides/index.md)
+    * [Design richtlijnen](#)
+
 * Developer guides
     * [Overzicht](/content/developer-guides/index.md "GPubP Content - Developer guides")
     * [Greetings module](/content/developer-guides/greetings/index.md "GPubP Content - Hello world example")
@@ -28,9 +32,10 @@
         * [Hoofdstuk 5 - Greetings endpoint aanspreken](/content/developer-guides/greetings/step-5-greetings-endpoint-access.md "GPubP Content - Hello world example")
         * [Extra - Eigen user als afzender weergeven](/content/developer-guides/greetings/extra-own-user-display.md "GPubP Content - Hello world example")
 
-* Designer guides
-    * [Overzicht](/README.md)
-    * [Design richtlijnen](/README.md)
+* Oplevering
+    * [DoD ](#) 
+    * [Review](#)
+    * [Deployment](#)
 
 * API referentie
     * [Overzicht](/content/api-references.md "GPubP Content - API referentie")
