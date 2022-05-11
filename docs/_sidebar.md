@@ -34,9 +34,9 @@
         * [Extra - Eigen user als afzender weergeven](/content/developer-guides/greetings/extra-own-user-display.md "GPubP Content - Hello world example")
 
 * Oplevering
-    * [DoD ](#) 
-    * [Review](#)
-    * [Deployment](#)
+    * [DoD](/content/oplevering/dod.md) 
+    * [Review](/content/oplevering/review.md)
+    * [Deploy](/content/oplevering/deploy.md)
 
 * API referentie
     * [Overzicht](/content/api-references.md "GPubP Content - API referentie")
