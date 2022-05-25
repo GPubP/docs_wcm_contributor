@@ -55,9 +55,8 @@
     * [Language module <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-language_module_react ':target="_blank"')
     * [Navigation module <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-navigation_module_react ':target="_blank"')
     * [Preview module <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-preview_module_react ':target="_blank"')
-    * [Roles & rights module]()
-        * [Roles-rights module <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-roles-rights_module_react ':target="_blank"')
-        * [BraaS package](/content/api-references.md "GPubP Content - API referentie")
+    * [Roles-rights module <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-roles-rights_module_react ':target="_blank"')
+     <!-- * [BraaS package](/content/api-references.md "GPubP Content - API referentie") -->
     * [Search module <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-search_module_react ':target="_blank"')
     * [Sites module <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-sites_module_react ':target="_blank"')
     * [Taxonomy module <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-taxonomy_module_react ':target="_blank"')
