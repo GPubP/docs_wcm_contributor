@@ -40,7 +40,7 @@
 
 * API referentie
     * [Overzicht](/content/api-references.md "GPubP Content - API referentie")
-    * [Core]()
+    * Core
         * [Core package (FE) <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-core_package_js ':target="_blank"')
         * [Utils (FE) <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/redactie-utils_react ':target="_blank"')
         * [Config Helper (FE) <i class="fa-solid fa-xs fa-arrow-up-right-from-square"></i>](https://gpubp.github.io/config-helper_package_nodejs ':target="_blank"')
